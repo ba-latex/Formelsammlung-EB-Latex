@@ -1,0 +1,30 @@
+{
+    // See https://go.microsoft.com/fwlink/?LinkId=733558
+    // for the documentation about the tasks.json format
+    "version": "2.0.0",
+    "tasks": [
+        {
+            "label": "Build LaTeX using Docker",
+            "type": "shell",
+            "command": "docker run --rm -v \"${workspaceFolder}:/latex\" jemand771/latex-build",
+            "problemMatcher": {
+                "owner": "latex",
+                "fileLocation": ["relative", "${workspaceFolder}"],
+                "severity": "info",
+                "pattern": {
+                    "regexp": "^(.*):([0-9]+): (.*)$",
+                    "file": 1,
+                    "line": 2,
+                    "message": 3
+                }
+            },
+            "group": {
+                "kind": "build",
+                "isDefault": true
+            },
+            "windows": {
+                "command": "docker run --rm -v \"${workspaceFolder}:/latex\" jemand771/latex-build"
+            }
+        }
+    ]
+}
