@@ -1,0 +1,28 @@
+\begin{circuitikz}
+\draw
+% R
+(0,0) node[](A1){}
+to [short, o-*] ++(2,0)
+++(0,0) node[](cla) {}
+to [R, *-*, R=$R_S$] ++(3,0)
+++(0,0) node[](csa){}
+to [short, -o] ++(3,0)
+++(0,0) node[](u2a){}
+to [short] ++(1,0)
+%down
+to [R, R=$R_L$] ++(0,-2)
+++(0,0) node[](lower){}
+%left
+to [short, -o] (lower-|u2a)
+to [short, -*] (lower-|csa)
+to [short, -*] (lower-|cla)
+to [short, -o] (lower-|A1)
+%down parallels
+(cla) to [capacitor, C=$C_L$, v=$U_{Breff_1}$] (lower-|cla)
+(csa) to [capacitor, C=$C_S$] (lower-|csa)
+(u2a) to [open, v=$U_{Breff_1}$] (lower-|u2a)
+% u3
+%to [open, v=$U_{Breff_2}$] ++(0, -2)
+%to [short, o-*] ++(-2,0)
+;
+\end{circuitikz}

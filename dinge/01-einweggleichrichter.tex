@@ -1,0 +1,46 @@
+\begin{circuitikz}
+\draw % transformator
+(1,0) node[transformer, anchor=A1](T){}
+(T.A1) node[anchor=east] {}
+(T.A2) node[anchor=east] {}
+(T.B1) node[anchor=west, label=below:+/-] {}
+(T.B2) node[anchor=west, label=above:-/+] {}
+% L1
+(0,0) node[label={left:L1}](L1){}
+(L1) to [short, o-] (T.A1)
+% N
+(T.A2) to [short, -o] ++(-1,0)
+++(0,0) node[label={left:N}](N){}
+% U
+(L1) to [open, v=$U$] (N)
+% a
+(T.B1) to [short, -o, i=$i_1$] ++(2,0)
+++(0,0) node[label={above:a}](a){}
+% b
+(T.B2) to [short, -o] ++(2, 0)
+++(0,0) node[label={below:b}](b){}
+% diode
+(a) to [diode, -*, v=$u_D$] ++(2,0)
+++(0,0) node[](cla){}
+to [short, -o] ++(2,0)
+++(0,0) node[](u2a){}
+to [short, i=$i_{Entladung}$] ++(1,0)
+% go down, R
+to [R, i=$i_L$, R=$R_L$] ++(0,-2|-T.B2)
+% left again
+to [short, -o] ++(-1,0)
+% u2
+++(0,0) node[](u2b){}
+(u2a) to [open, v=$u_2$] (u2b)
+% back to b
+to [short, -*] ++(-2,0)
+++(0,0) node[](clb){}
+to [short, i=$i_{Aufladung}$] (b)
+% CL and u1
+(cla) to [capacitor, C=$C_L$] (clb)
+(a) to [open, v=$u_1$] (b)
+% kondensator-ströme
+(cla) to [open, i=$i_{Aufladung}$] (clb)
+(clb) to [open, i=$i_{Entladung}$] (cla)
+;
+\end{circuitikz}

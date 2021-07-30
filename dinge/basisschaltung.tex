@@ -1,0 +1,32 @@
+\begin{circuitikz}
+\draw
+(0,0) node[](Ue){}
+to [open,v=$U_e$] ++(0,-3)
+++(0,0) node [](gndleft){}
+(Ue) to [capacitor, o-*, C=$C_1$] ++(2,0)
+++(0,0) node[](tmp1){}
+to [R, *-*, R=$R_E$] ++(gndleft-|gndleft)
+to [short, *-o] ++(-2,0)
+(tmp1) to [short] ++(4,0) %change this
+++(0,0) node[npn, rotate=90, yscale=-1, anchor=emitter](trans){}
+(trans.base) to [short, -*] ++(-2,0)
+++(0,0) node[](tmp2){}
+to [R, *-*, R=$R_2$] (gndleft-|tmp2)
+(tmp2) to [short, *-] ++(0,1)
+to [R, R=$R_1$] ++(0, 2)
+++(0,0) node[](tmp3){}
+to [short, -*] (tmp3-|trans.collector)
+++(0,0) node[](tmp4){}
+to [R, -*, R=$R_C$] (trans.collector)
+to [C, *-o, C=$C_3$] ++(2,0)
+++(0,0) node[](Ua){}
+to [open, v=$U_a$] (gndleft-|Ua)
+to [short, o-*] (gndleft-|trans.base)
+(tmp4) to [short, *-o] ++(2,0)
+++(0,0) node[anchor=west](UB){$U_{B+}$}
+(trans.base) to [C, *-*, C=$C_2$] (gndleft-|trans.base)
+++(0,0) node[ground](gnd){}
+(gndleft-|trans.base) to [short] (gndleft-|tmp2)
+to [short] (gndleft-|tmp1)
+;
+\end{circuitikz}
