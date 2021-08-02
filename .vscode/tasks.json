@@ -6,13 +6,13 @@
         {
             "label": "Build LaTeX using Docker",
             "type": "shell",
-            "command": "docker pull ${config:vorlage-latex.buildcontainer} && docker run -u $(id -u ${USER}):$(id -g ${USER}) --rm -v \"${workspaceFolder}/Latex:/latex\" -e HOST_PATH=\"${workspaceFolder}/Latex\" ${config:vorlage-latex.buildcontainer}",
+            "command": "docker pull ${config:vorlage-latex.buildcontainer} && docker run -u $(id -u ${USER}):$(id -g ${USER}) --rm -v \"${workspaceFolder}:/latex\" -e HOST_PATH=\"${workspaceFolder}\" ${config:vorlage-latex.buildcontainer}",
             "problemMatcher": [
                 {
                     "owner": "latex",
                     "fileLocation": [
                         "relative",
-                        "${workspaceFolder}/Latex"
+                        "${workspaceFolder}"
                     ],
                     "pattern": {
                         "regexp": "^(.*?):([0-9]+): (.*?): (.*)$",
@@ -26,7 +26,7 @@
                     "owner": "latex",
                     "fileLocation": [
                         "relative",
-                        "${workspaceFolder}/Latex"
+                        "${workspaceFolder}"
                     ],
                     "pattern": {
                         "regexp": "^([^:]+?):(?!\\d+:) (.*): (.*)$",
@@ -39,15 +39,15 @@
             ],
             "group": "build",
             "windows": {
-                "command": "docker run --pull always --rm -v \\\"${workspaceFolder}/Latex:/latex\\\" -e HOST_PATH=\\\"${workspaceFolder}/Latex\\\" ${config:vorlage-latex.buildcontainer}"
+                "command": "docker run --pull always --rm -v \\\"${workspaceFolder}:/latex\\\" -e HOST_PATH=\\\"${workspaceFolder}\\\" ${config:vorlage-latex.buildcontainer}"
             }
         },
         {
             "label": "Delete temporary files",
             "type": "shell",
-            "command": "rm -rf \"${workspaceFolder}/Latex/.build\"",
+            "command": "rm -rf \"${workspaceFolder}/.build\"",
             "windows": {
-                "command": "del /F /S /Q -\"${workspaceFolder}\\Latex\\.build\""
+                "command": "del /F /S /Q -\"${workspaceFolder}\\.build\""
             },
             "presentation": {
                 "reveal": "never"
