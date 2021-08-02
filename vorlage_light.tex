@@ -72,6 +72,11 @@
 \usepackage[a4paper,lmargin={2.5cm},rmargin={2.5cm},tmargin={2cm},bmargin={2cm}]{geometry}
 \usepackage{lineno}
 \usepackage{csquotes}
+\usepackage[european,straightvoltages]{circuitikz}
+\usepackage{icomma}
+\usepackage[normalem]{ulem}
+\usepackage{mathtools}
+\useunder{\uline}{\ul}{}
 
 %! Code Integration im Dokument
 %? Inklusive Erzeugung eines Custom Enviroments für Programmcodes
@@ -222,7 +227,7 @@
 \newcommand{\bild}[4][1.0]{\begin{figure}[H]
                       \centering
                       \includegraphics[width=#1\columnwidth]{bilder/#2}
-                      \caption{#3}
+                      %\caption{#3}
                       \label{fig:#4}
                       \end{figure}}
 \newcommand{\fullref}[1]{(siehe Kapitel~\ref{#1}~-~\nameref{#1})}
