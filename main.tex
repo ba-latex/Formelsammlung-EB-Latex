@@ -304,8 +304,15 @@
     \section{Bipolartransistoren}
     %! Oh mein gott ist dieses bild schrecklich, wer ist bei denen auf die idee gekommen, einfach höherwertigen text drunterzuklatschen und das bild so zu lassen ~c (ja ich weiß, man kanns erkennen, triggert nur)
     % bildquwuelle: https://www.elektronik-kompendium.de/sites/bau/0201291.htm
-    \bild[0.9]{bjt-pinout.png}{Platzh. für gut}{bjt-pinout}
-    \noindent
+    \svg[0.9]{bjt-pinout}{BJT-Pinout}{bjt-pinout}
+    
+    \begin{minipage}{0.5\columnwidth}
+        Strom und Spannung am NPN-Transistor
+    \end{minipage}
+    \begin{minipage}{0.5\columnwidth}
+        Strom und Spannung am PNP-Transistor    
+    \end{minipage}
+    \noindent\\
     $I_B\uparrow\rightarrow I_C\uparrow\quad I_B=0\rightarrow I_C=0$
     \renewcommand{\arraystretch}{1.0}
     \begin{table}[H]
@@ -408,7 +415,7 @@
         \end{table}
     %\end{minipage}
     %\begin{minipage}{0.3\columnwidth}
-    \bild[0.5]{kollektor-schaltung-martin.png}{Danke an Martin für das Bild}{kollektorschaltung}
+    \svg[0.4]{kollektor-schaltung-martin}{Martins Kollektorschaltung als SVG}{kollektorschaltung}
     %\end{minipage}
     \subsection{Basis-Schaltung}
     \begin{minipage}{0.3\columnwidth}
@@ -464,6 +471,7 @@
     Vorwärtssteilheit $y_{21}=\frac{\Delta I_D}{\Delta U_{GS}}=S$\quad Ausgangsleitwert $y_{22}=\frac{\Delta I_D}{\Delta U_{DS}}=\frac{1}{r_{DS}}$\\
     Automatische Gate-Spannungs-Erzeugung $U_{RS}=I_D\cdot R_S\quad P_{tot}=U_{DS}\cdot I_D$\\
     Gatespannungserzeuger mit Gatespannungsteiler $R_1=\frac{U_B-U_{GS}-U_{RS}}{I_q}\quad R_2=\frac{U_{GS}+U_{RS}}{I_q}$
+    \svg[0.7]{fets}{FETs}{fets}
     \subsubsection{Source-Schaltung}
     \begin{minipage}{0.5\columnwidth}
         \renewcommand{\arraystretch}{1.01}
