@@ -301,8 +301,6 @@
     \end{minipage}
 
     \section{Bipolartransistoren}
-    %! Oh mein gott ist dieses bild schrecklich, wer ist bei denen auf die idee gekommen, einfach höherwertigen text drunterzuklatschen und das bild so zu lassen ~c (ja ich weiß, man kanns erkennen, triggert nur)
-    % bildquwuelle: https://www.elektronik-kompendium.de/sites/bau/0201291.htm
     \svg[0.9]{bjt-pinout}{BJT-Pinout}{bjt-pinout}
     
     \begin{minipage}{0.5\columnwidth}
@@ -372,30 +370,24 @@
 
     \section{Transistor-Grundschaltungen}
     \subsection{Emitter-Schaltung}
-    %! minipages entfernt, da kollektor schaltung sonst eh hässlich dran geklatscht und bild sehr klein war
-    %\begin{minipage}{0.7\columnwidth}
-        \renewcommand{\arraystretch}{1.0}
-        \begin{table}[H]
-            \begin{tabularx}{\columnwidth}{l l l}
-                Wert & Formel & Bemerkung \\
-                $r_e$ & $=R_1\parallel R_2\parallel r_{BE}$ & wenn $R_E$ mit $C_E$ überbrückt \\
-                $r_e$ & $=R_1\parallel R_2\parallel (r_{BE}+\beta\cdot R_E)$ & ohne $C_E$ \\
-                $r_a$ & $=R_C\parallel r_{CE}$ & \\
-                $V_u$ & $=\frac{\beta}{r_{BE}}\cdot r_a$ & ohne Last \\
-                $V_u$ & $=\frac{\beta}{r_{BE}}\cdot (r_a\parallel R_L)$ & mit Last \\
-                $V_i$ & $=\beta\cdot\frac{r_{CE}}{r_{CE}+R_C}$ & ohne Last \\
-                $V_i$ & $=\beta\cdot\frac{r_{CE}}{r_{CE}+(R_C\parallel R_L)}$ & mit Last \\
-                $V_p$ & $=V_u\cdot V_i\quad \varphi=180^{\circ}$ & \\ %grad per ° ging nicht
-                $C_E$ & $=\frac{h_{21E}}{2\pi f_{gu}\dot (h_{11E}+R_i)}$ & \\
-            \end{tabularx}
-        \end{table}
-    %\end{minipage}
-    %\begin{minipage}{0.3\columnwidth}
-        \svg[0.4]{emitter-schaltung}{Emitterschaltung}{emitterschaltung}
-    %\end{minipage}
+    \renewcommand{\arraystretch}{1.0}
+    \begin{table}[H]
+        \begin{tabularx}{\columnwidth}{l l l}
+            Wert & Formel & Bemerkung \\
+            $r_e$ & $=R_1\parallel R_2\parallel r_{BE}$ & wenn $R_E$ mit $C_E$ überbrückt \\
+            $r_e$ & $=R_1\parallel R_2\parallel (r_{BE}+\beta\cdot R_E)$ & ohne $C_E$ \\
+            $r_a$ & $=R_C\parallel r_{CE}$ & \\
+            $V_u$ & $=\frac{\beta}{r_{BE}}\cdot r_a$ & ohne Last \\
+            $V_u$ & $=\frac{\beta}{r_{BE}}\cdot (r_a\parallel R_L)$ & mit Last \\
+            $V_i$ & $=\beta\cdot\frac{r_{CE}}{r_{CE}+R_C}$ & ohne Last \\
+            $V_i$ & $=\beta\cdot\frac{r_{CE}}{r_{CE}+(R_C\parallel R_L)}$ & mit Last \\
+            $V_p$ & $=V_u\cdot V_i\quad \varphi=180^{\circ}$ & \\ %grad per ° ging nicht
+            $C_E$ & $=\frac{h_{21E}}{2\pi f_{gu}\dot (h_{11E}+R_i)}$ & \\
+        \end{tabularx}
+    \end{table}
+    \svg[0.4]{emitter-schaltung}{Emitterschaltung}{emitterschaltung}
     \subsection{Kollektor-Schaltung}
-    %\begin{minipage}{0.7\columnwidth}
-        Anmerkung: BST = Basisspannungsteiler
+       Anmerkung: BST = Basisspannungsteiler
         \renewcommand{\arraystretch}{1.1}
         \begin{table}[H]
             \begin{tabularx}{\columnwidth}{l l l}
@@ -412,10 +404,7 @@
                 $V_p$ & $=V_u\cdot V_i\quad \varphi=0^{\circ}$ & \\ %grad per ° ging nicht
             \end{tabularx}
         \end{table}
-    %\end{minipage}
-    %\begin{minipage}{0.3\columnwidth}
     \svg[0.4]{kollektor-schaltung-martin}{Martins Kollektorschaltung als SVG}{kollektorschaltung}
-    %\end{minipage}
     \subsection{Basis-Schaltung}
     \begin{minipage}{0.3\columnwidth}
         \begin{table}[H]
