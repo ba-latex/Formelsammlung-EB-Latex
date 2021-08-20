@@ -1,0 +1,67 @@
+\svg[0.9]{bjt-pinout}{BJT-Pinout}{bjt-pinout}
+
+\begin{minipage}{0.5\columnwidth}
+    Strom und Spannung am NPN-Transistor
+\end{minipage}
+\begin{minipage}{0.5\columnwidth}
+    Strom und Spannung am PNP-Transistor    
+\end{minipage}
+\noindent\\
+$I_B\uparrow\rightarrow I_C\uparrow\quad I_B=0\rightarrow I_C=0$
+\renewcommand{\arraystretch}{1.0}
+\begin{table}[H]
+    \begin{tabularx}{\columnwidth}{l l l}
+        Wert                                           & Formel                                                                   & Bemerkung \\
+        Gleichstromverstärkung $B$                     & $=\frac{I_C}{I_B}$                                                       & bei $U_{CE}=konst.$ \\
+        dyn. Gleichstromverstärkung $\beta$            & $=h_{21e}=\frac{\Delta I_C}{\Delta I_B}$                                 & \\
+        $P_V$                                          & $=U_{CE}\cdot I_C + \underbrace{U_{BE}\cdot I_B}_\text{vernachl. klein}$ & \\
+        Eingangswiderstand Transistor $r_{BE}$         & $=h_{11e}=\frac{\Delta U_{BE}}{\Delta I_{BE}}$                           & \\
+        Ausgangsleitwert Transistor $\frac{1}{r_{CE}}$ & $=h_{22e}=\frac{\Delta I_C}{\Delta U_{CE}=\frac{1}{r_{CE}}}$             & \\
+        Steilheit des Transistors $S$                  & $=y_{21}=\frac{\Delta U_{BE}}{\Delta I_{BE}}$                            & \\
+        $C_1$                                          & $=\frac{1}{2\pi f_{gu}\cdot (r_e+R_i)}$                                  & \\
+        $C_2$                                          & $=\frac{1}{2\pi f_{gu}\cdot (r_a+R_L)}$                                  & \\
+        $r_e$                                          & $=R_1\parallel R_2\parallel r_{BE}$                                      & \\
+    \end{tabularx}
+\end{table}
+\subsection{Bestimmung $R_C$}
+$U_{CE}\approx \frac{1}{2}U_B\quad R_C=\frac{U_B-U_{CE(a)}}{I_{C(a)}}$
+
+\subsection{Erzeugen der Basisvorspannung}
+    \begin{minipage}{0.5\columnwidth}
+        durch Basisvorwiderstand\\
+        $R_B=\frac{U_B-U_{BE(a)}}{I_{B(a)}}$\\ %vorher U_B-U_{CE}, laut Martin falsch
+        $R_C=\frac{U_B-U_{CE}}{I_C}$
+    \end{minipage}
+    \begin{minipage}{0.5\columnwidth}
+        \svg[0.8]{basisvorspannung_widerstand}{Basisvorspannung Widerstand}{bv-spannung-widerstand}
+    \end{minipage}
+
+    \begin{minipage}{0.5\columnwidth}
+        durch Basisspannungsteiler\\
+        $I_q=2\dots 10\cdot I_B\\
+        R_1=\frac{U_B-U_{BE(a)}}{I_q+I_B}\\
+        R_2=\frac{U_{BE(a)}}{I_q}$\\
+        $R_C=\frac{U_B-U_{CE}}{I_C}$
+    \end{minipage}
+    \begin{minipage}{0.5\columnwidth}
+        \svg[0.8]{basisvorspannung_spannungsteiler}{Basisvorspannung Spannungsteiler}{bv-spannung-teiler}
+    \end{minipage}
+
+\subsection{Thermische Arbeitspunktstabilisierung}
+    \begin{minipage}{0.5\columnwidth}
+        durch Emitter-Widerstand:
+        
+        $I_E=I_C+I_B\quad U_{RE}=R_E\cdot I_E\\
+        R_C=\frac{U_B-U_{CE}-U_{RE}}{I_C}$\\ %U_BE zu U_RE korrigiert laut Eric + Martin
+        $C_E\geq\frac{h_{21e}}{2\pi f_{gu}\cdot(h_{11e}+R_i)}=\frac{\beta}{2\pi f_{gu}\cdot(r_{BE}+R_i)}$ %in FS "h_{11}e", ich nehme an Fehler?
+        
+        \svg[0.8]{emitter-widerstand}{Emitter-Widerstand}{emitter-widerstand}
+    \end{minipage}
+    \begin{minipage}{0.5\columnwidth}
+        durch Spannungsgegenkopplung:
+        
+        $R_1=\frac{U_{CE}-U_{BE(a)}}{I_q+I_B}\quad R_2=\frac{U_{BE}}{I_q}\\
+        R_C=\frac{U_B-U_{CE}}{I_C+I_B+I_q}$ 
+        
+        \svg[1.0]{spannungsgegenkopplung}{Spannungsgegenkopplung}{spannungsgegenkopplung}
+    \end{minipage}

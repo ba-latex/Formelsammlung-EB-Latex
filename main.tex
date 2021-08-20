@@ -7,184 +7,90 @@
 
 %TODO @willy (wenn ich lust hab) kevins formelsammlung + mein gekritzel + reinhold-dokumente durchgehen und alle formeln doublechecken ~w
 \begin{document}
-    \frontmatter
-    \title{Formelsammlung Elektronische Bauelemente}
-    %\author{Willy Hille, Colin Pohle nach Original von Marcel Ott}
-    \author{Martin Dietschreit, Willy Hille, Julia Nützel,\\Colin Pohle, Eric Richter, Kevin Wenke\\nach Original von Marcel Ott.}
-    \maketitle
-    \tableofcontents
+\frontmatter
+\title{Formelsammlung Elektronische Bauelemente}
+%\author{Willy Hille, Colin Pohle nach Original von Marcel Ott}
+\author{Martin Dietschreit, Willy Hille, Julia Nützel,\\
+Colin Pohle, Eric Richter, Kevin Wenke\\
+nach Original von Marcel Ott.}
+\maketitle
+\tableofcontents
 
-    \mainmatter
-    \section{E-Reihen}
+\mainmatter
+\section{E-Reihen}
     \input{dinge/e-reihen.tex}
-
-    \section{Grundlagen ET}
+\section{Grundlagen ET}
     \input{dinge/get.tex}
     Hinweis: $U_{a-}$ bzw. $U_{a+}$ ist nur kürzere Schreibweise für $U_{a_{\min}}$ bzw. $U_{a_{\max}}$
-
-    \section{dB \& dB-Rechnung} %nach Kevin Formelsammlung
-        $V_P=\frac{P_{aus}}{P_{ein}}\quad\quad V_U=\frac{U_{aus}}{U_{ein}}\quad\quad V_{P_{dB}}=10\lg\frac{P_{aus}}{P_{ein}}\quad\quad V_{U_{dB}}=20\lg\frac{U_{aus}}{U_{ein}}$ \\
-    negativer dB-Wert: Dämpfung (z.B. $20dB\rightarrow $x$100; -30dB\rightarrow $x$\frac{1}{1000}$)\\
-    Stromverstärkung (ungewöhnlich) verhält sich wie Spannungsverstärkung\\
-
-    \begin{minipage}{0.5\columnwidth}
-    \renewcommand{\arraystretch}{0.9}
-    \begin{table}[H]
-    \centering
-    \begin{tabular}{|l|l|l|}
-    \hline
-    $dB$      & $V_P$                            & $V_U$                  \\ \hline
-    $0$       & $1$                              & $1$                    \\ \hline
-    $1$       & $\sqrt[10]{10}=1,26$             & $\sqrt[20]{10}=1,12$   \\ \hline
-    $2$       & $\sqrt[5]{10}=1,58$              & $\sqrt[10]{10}=1,26$   \\ \hline
-    $3$       & $2$                              & $\sqrt{2}=1,41$        \\ \hline
-    $6$       & $4$                              & $2$                    \\ \hline
-    $10$      & $10$                             & $\sqrt{10}=3,16$       \\ \hline
-    $20$      & $100$                            & $10$                   \\ \hline
-    $40$      & $10^4$                           & $100$                  \\ \hline
-    $60$      & $10^6$                           & $1000$                 \\ \hline
-    $80$      & $10^8$                           & $10^4$                 \\ \hline
-    $100$     & $10^{10}$                        & $10^5$                 \\ \hline
-    \end{tabular}
-    \end{table}
-    \end{minipage}
-    \begin{minipage}{0.5\columnwidth}
-    \textbf{bezogene dB-Werte:}
-    \renewcommand{\arraystretch}{0.9}
-    \begin{table}[H]
-    \centering
-    \begin{tabular}{|l|l|l|}
-    \hline
-    Größe                       & Bezugswert     & Einheit        \\ \hline
-    Leistung $P_0$              & $1mW$          & $dBm$          \\ \hline
-    Leistung $P_0$              & $1W$           & $dBW$          \\ \hline
-    Spannung $U_0$              & $1\mu V$       & $dB\mu V$      \\ \hline
-    Spannung $U_0$              & $1V$           & $dBV$          \\ \hline
-    Spannung $U_0$              & $774,6mV$      & $dBu$          \\ \hline
-    Strom $I_0$                 & $1A$           & $dBA$          \\ \hline
-    Strom $I_0$                 & $1,291mA$      & $dBi$          \\ \hline
-    \end{tabular}
-    \end{table}
-    $dBm$: $V_{P_{dB}}=10\lg\frac{P_{aus}}{1mW}$\\
-    $db\mu$: $V_{U_{dB}}=20\lg\frac{U_{aus}}{1\mu V}$
-    \end{minipage}
-
-    $\longrightarrow$ Zerlegen\\
-    $V_{ges}=\prod\limits_{i=1}^n V_i=V_1\cdot V_2\cdot V_3\cdot\ \dots\ \cdot V_n\\ V_{ges_{dB}}=\sum\limits_{i=1}^n V_i=V_{1_{dB}}+V_{2_{dB}}+V_{3_{dB}}+\ \dots\ +V_{n_{dB}}$\\
-
-    \section{Halbleiter allgemein}
-    \label{sec:halbleiter}
-
-    \begin{table}[H]
-        \begin{tabularx}{\columnwidth}{|X|X|}
-            \hline
-            \multicolumn{2}{|c|}{\textbf{Besetzungswahrscheinlichkeit:}}\\
-            \hline
-            $P(W)=\frac{1}{1+e^{\frac{W-W_F}{k\cdot T}}}$ & $k=1,38\cdot 10^{-23}\frac{Ws}{K}$ \\
-            & $T=$ absolute Temperatur \\
-            & $W_F=$ Fermi-Nivaeu \\
-            \hline
-            \multicolumn{1}{|c|}{$T=0$} & \multicolumn{1}{c|}{$T>0$} \\
-            $W>W_F\rightarrow 0$ & $P(W_F)=\frac{1}{2}$\\
-            $W<W_F\rightarrow 1$ & \\
-            \hline
-        \end{tabularx}
-    \end{table}
-    \begin{table}[H]
-        \begin{tabularx}{\textwidth}{|X X|}
-            \hline
-            \multicolumn{2}{|c|}{\textbf{Legende:}}\\
-            \hline
-            $I_F=$Effektivwert & $I_{FM}=$periodischer Spitzenstrom \\
-            $I_{FS}=$Stoßspitzenstrom & $I_0=$Richtstrom (arithm. Mittel)\\
-            $t_i=$ Einschaltdauer & $T=$ Gesamtdauer \\
-            \multicolumn{2}{|c|}{$g=\frac{t_i}{T}$}\\
-            $U_{RRM}=$period. Spitzensperrspannung & $U_{RSM}=$eindeut. Spitzensperrspannung \\
-            $P_{tot}=$tot. Verlustleistung & $P_V=U_F\cdot I_F + U_R\cdot I_R$ \\
-            & $P_V\leq P_{tot}$ \\
-            \multicolumn{2}{|c|}{$R_{th JU}=$therm. Widerstand zw. Sperrschicht \& Umgebung}\\
-            \multicolumn{2}{|c|}{$R_{th JU}=\frac{\vartheta_J-\vartheta_U}{P_V} \bfrac{\vartheta_J\ Temperatur\ Sperrschicht}{\vartheta_U\ Temperatur\ Umgebung}\quad R_{th_{JU}}=R_{th_{JG}}+R_{th_{GK}}+R_{th_{K}}\quad [R_{th}]=\frac{K}{W}$}\\
-            \multicolumn{2}{|c|}{$P_{V_{\max}}=\frac{\vartheta_{I_{\max}}-\vartheta_U}{R_{th_{JG}}+R_{th_{GK}}+R_{th_{K}}}$}\\
-            $R_F=$Gleichstromwiderstand Diode & $R_R=$stat. Sperrwiderstand \\
-            $r_F=$dyn. Durchlasswiderstand & $C_D=$Diodenkapazität \\
-            $R=\frac{U}{I}$ & $r_f=\frac{\Delta U_F}{\Delta I_F}$ \\
-            $t_{rr}=$Sperrverzögerungszeit & \\
-            \hline
-        \end{tabularx}
-    \end{table}
-    \svg[1.0]{durchlassstrom}{Durchlassstrom}{durchlassstrom}
-
-
-    \section{Einweggleichrichter}
-    \label{sec:Einweggleichrichter}
-
+\section{dB \& dB-Rechnung} %nach Kevin Formelsammlung
+    \input{dinge/db-db-rechnung.tex}
+\section{Halbleiter allgemein}\label{sec:halbleiter}
+    \input{dinge/halbleiter.tex}
+\section{Einweggleichrichter}\label{sec:Einweggleichrichter}
     \input{dinge/01-einweggleichrichter.tex}
 
     \begin{table}[H]
         \begin{tabularx}{\columnwidth}{l l l}
-            Wert & Formel & Bemerkung \\
-            $C_L$ & $=10\mu F\cdot [I_L]$ & \\
-            $U_2$ & $= \sqrt{2}\cdot U_1-U_{Diode}$ & $U_{Diode}\approx 0,6V$ im Leerlauf \\
-            $U_2$ & $= 1,2\cdot U_1$ & Belastungsfall \\
-            $I_{FM}$ & $\geq1,2\dots 5\cdot I_L$ & \\
-            $U_{RM}$ & $=2\cdot \sqrt{2}\cdot U_1$ & Ungünstigster Fall: Leerlauf \\
-            $U_{RM}$ & $=3\cdot \sqrt{2}\cdot U_1$ & praktisch sinnvolle Auswahl \\
-            $I_{L-}$ & $=\frac{U_{2-}}{R_{L\,\min}}$ & Laststrom \\
-            $\ddot{U}$ & $=\frac{U_{Prim\ddot{a}r}}{U_{Sekund\ddot{a}r}} $ & Trafoübersetzung \\
-            $U_e$ & $=2\dots 4\cdot U_a$ & praktisch $2\cdot U_a$ \\
-            $U_{Br\,eff}$ & $=4,8\cdot 10^{-3}\cdot s\cdot \frac{I_{L-}}{C_L}$ & \\
-            $U_{Br\,SS}-$ & $=14\cdot 10^{-3}\cdot s\cdot \frac{I_{L-}}{C_L}$ & \\
-            $W$ & $=\frac{U_{Br\,eff}}{U_{L-}}$ & Welligkeit \\ %! in Original anders aber laut Kevin so korrekt
+            Wert            & Formel                                            & Bemerkung \\
+            $C_L$           & $=10\mu F\cdot [I_L]$                             & \\
+            $U_2$           & $= \sqrt{2}\cdot U_1-U_{Diode}$                   & $U_{Diode}\approx 0,6V$ im Leerlauf \\
+            $U_2$           & $= 1,2\cdot U_1$                                  & Belastungsfall \\
+            $I_{FM}$        & $\geq1,2\dots 5\cdot I_L$                         & \\
+            $U_{RM}$        & $=2\cdot \sqrt{2}\cdot U_1$                       & Ungünstigster Fall: Leerlauf \\
+            $U_{RM}$        & $=3\cdot \sqrt{2}\cdot U_1$                       & praktisch sinnvolle Auswahl \\
+            $I_{L-}$        & $=\frac{U_{2-}}{R_{L\,\min}}$                     & Laststrom \\
+            $\ddot{U}$      & $=\frac{U_{Prim\ddot{a}r}}{U_{Sekund\ddot{a}r}}$  & Trafoübersetzung \\
+            $U_e$           & $=2\dots 4\cdot U_a$                              & praktisch $2\cdot U_a$ \\
+            $U_{Br\,eff}$   & $=4,8\cdot 10^{-3}\cdot s\cdot\frac{I_{L-}}{C_L}$ & \\
+            $U_{Br\,SS}-$   & $=14\cdot 10^{-3}\cdot s\cdot\frac{I_{L-}}{C_L}$  & \\
+            $W$             & $=\frac{U_{Br\,eff}}{U_{L-}}$                     & Welligkeit \\ %! in Original anders aber laut Kevin so korrekt
         \end{tabularx}
     \end{table}
-
-
-    \section{Zweipuls-Mittelpunkt-Schaltung (M2U)}\label{sec:zweipuls-mittelpunkt-schaltung} %! in Original fälschlicherweise "Zweipols... " genannt, hoffe ich
+\section{Zweipuls-Mittelpunkt-Schaltung (M2U)}\label{sec:zweipuls-mittelpunkt-schaltung} %! in Original fälschlicherweise "Zweipols... " genannt, hoffe ich
     \svg[1.0]{m2u}{M2U}{m2u}
 
     \begin{table}[H]
         \begin{tabularx}{\columnwidth}{l l l}
-            Wert & Formel & Bemerkung \\
-            $U_{2-}$ & $=\sqrt{2}\cdot U_1-U_F$ & $\approx 1,3\cdot U_1 $ \\
-            $I_{FM}$ & $\geq 0,72\cdot I_{L-}$ \\
-            $U_{RM}$ & $\geq 3\cdot \sqrt{2}\cdot U_1$\\
-            $U_{Br\, eff}$ & $=1,8\cdot 10^{-3}\cdot s\cdot\frac{I_{L-}}{C_L}$ \\
-            $U_{Br\, SS}$ & $=7\cdot 10^{-3}\cdot s\cdot\frac{I_{L-}}{C_L}$ \\
+            Wert            & Formel                                             & Bemerkung \\
+            $U_{2-}$        & $=\sqrt{2}\cdot U_1-U_F$                           & $\approx 1,3\cdot U_1 $ \\
+            $I_{FM}$        & $\geq 0,72\cdot I_{L-}$                            & \\
+            $U_{RM}$        & $\geq 3\cdot \sqrt{2}\cdot U_1$                    & \\
+            $U_{Br\, eff}$  & $=1,8\cdot 10^{-3}\cdot s\cdot\frac{I_{L-}}{C_L}$  & \\
+            $U_{Br\, SS}$   & $=7\cdot 10^{-3}\cdot s\cdot\frac{I_{L-}}{C_L}$    & \\
         \end{tabularx}
     \end{table}
 
-    \section{Brückengleichrichter = \striche{Grätzbrücke}}\label{sec:bruckengleichrichter}
+\section{Brückengleichrichter = \striche{Grätzbrücke}}\label{sec:bruckengleichrichter}
     \begin{minipage}{0.5\columnwidth}
-    \begin{table}[H]
-        \begin{tabularx}{\columnwidth}{l l}
-        Wert & Formel \\
-        $U_{2-leer}$ & $=\sqrt{2}\cdot U_1-2\cdot U_F$ \\
-        $U_{2-}$ & $=1,3\cdot U_1$ \\
-        $I_{FM}$ & $\geq 0,72\cdot I_{L-}$ (an den Dioden) \\
-        $U_{RM}$ & $\geq 1,5\cdot\sqrt{2}\cdot U_1$ (an den Dioden) \\
-        $U_{Br\,eff}$ & $=1,8\cdot 10^{-3}\cdot s \cdot\frac{I_{L-}}{C_L}$ \\
-        $U_{Br\,SS}$ & $=7\cdot 10^{-3}\cdot s \cdot\frac{I_{L-}}{C_L}$ \\
-        \end{tabularx}
-    \end{table}
-
+        \begin{table}[H]
+            \begin{tabularx}{\columnwidth}{l l}
+                Wert            & Formel \\
+                $U_{2-leer}$    & $=\sqrt{2}\cdot U_1-2\cdot U_F$ \\
+                $U_{2-}$        & $=1,3\cdot U_1$ \\
+                $I_{FM}$        & $\geq 0,72\cdot I_{L-}$ (an den Dioden) \\
+                $U_{RM}$        & $\geq 1,5\cdot\sqrt{2}\cdot U_1$ (an den Dioden) \\
+                $U_{Br\,eff}$   & $=1,8\cdot 10^{-3}\cdot s \cdot\frac{I_{L-}}{C_L}$ \\
+                $U_{Br\,SS}$    & $=7\cdot 10^{-3}\cdot s \cdot\frac{I_{L-}}{C_L}$ \\
+            \end{tabularx}
+        \end{table}
     \end{minipage}
     \begin{minipage}{0.5\columnwidth}
         \svg[1.0]{brueckengleichrichter}{Brückengleichrichter}{brückengleichrichter}
     \end{minipage}
 
 \section{RC-Sieb}\label{sec:rc-sieb}
-\renewcommand{\arraystretch}{0.9}
+    \renewcommand{\arraystretch}{0.9}
     \begin{table}[H]
         \begin{tabularx}{\columnwidth}{l l l}
-            Wert & Formel & Bemerkung \\
-            \multicolumn{2}{c}{$\frac{U_{Br1}}{\sqrt{R_{2_S}+x_{2_{Cs}}}}=\frac{U_{Br2}}{x_{Cs}}$} & Vorraussetzung: $R_s\gg x_{Cs}\to G\approx\frac{R_s}{x_{Cs}}$ \\
-            $\frac{U_{Br1}}{U_{Br2}}$ & $=G$ & Glättungsfaktor \\
-            $G$ & $=\sqrt{(\frac{R_s}{x_{Cs}})_2+1}$ & sinnvoll: $10\dots 20$ \\
-            $G$ & $=2\pi\cdot f_{Br}\cdot C_s\cdot  R_s$ & sinnvoll: $10\dots 20$ \\
-            $x_{Cs}$ & $=\frac{1}{2\pi\cdot f_{Br}\cdot C_s}$ & \\
-            $U_{A-}$ & $=U_{2-}-U_{Rs}$ & \\
-            $U_{Rs}$ & $\leq 0,1\cdot U_2$ & \\
-            $U_{Rs}$ & $=R_S\cdot I_{L-}$ & \\
+            Wert                        & Formel                                                    & Bemerkung \\
+            \multicolumn{2}{c}{$\frac{U_{Br1}}{\sqrt{R_{2_S}+x_{2_{Cs}}}}=\frac{U_{Br2}}{x_{Cs}}$}  & Vorraussetzung: $R_s\gg x_{Cs}\to G\approx\frac{R_s}{x_{Cs}}$ \\
+            $\frac{U_{Br1}}{U_{Br2}}$   & $=G$                                                      & Glättungsfaktor \\
+            $G$                         & $=\sqrt{(\frac{R_s}{x_{Cs}})_2+1}$                        & sinnvoll: $10\dots 20$ \\
+            $G$                         & $=2\pi\cdot f_{Br}\cdot C_s\cdot  R_s$                    & sinnvoll: $10\dots 20$ \\
+            $x_{Cs}$                    & $=\frac{1}{2\pi\cdot f_{Br}\cdot C_s}$                    & \\
+            $U_{A-}$                    & $=U_{2-}-U_{Rs}$                                          & \\
+            $U_{Rs}$                    & $\leq 0,1\cdot U_2$                                       & \\
+            $U_{Rs}$                    & $=R_S\cdot I_{L-}$                                        & \\
         \end{tabularx}
     \end{table}
     \input{dinge/rc-sieb.tex}  
@@ -193,11 +99,11 @@
     \begin{minipage}{0.65\columnwidth}
         \begin{table}[H]
             \begin{tabularx}{\columnwidth}{l l}
-                Wert & Formel \\
-                $G$ & $=\frac{x_L}{x_C}-1$ \\
-                $x_L$ & $2\pi\cdot f_{Br}\cdot L_S$ \\
-                $x_C$ & $=\frac{1}{2\pi\cdot f_{Br}\cdot C_S}$ \\
-                $G$ & $=(2\pi\cdot f_{Br})_2\cdot L_S\cdot C_S$ \\
+                Wert    & Formel \\
+                $G$     & $=\frac{x_L}{x_C}-1$ \\
+                $x_L$   & $2\pi\cdot f_{Br}\cdot L_S$ \\
+                $x_C$   & $=\frac{1}{2\pi\cdot f_{Br}\cdot C_S}$ \\
+                $G$     & $=(2\pi\cdot f_{Br})_2\cdot L_S\cdot C_S$ \\
             \end{tabularx}
         \end{table}
     \end{minipage}
@@ -205,7 +111,7 @@
         \svg[0.8]{lc-sieb}{LC-Sieb}{lc-sieb}
     \end{minipage}
 
-    \section{Zener-Diode}\label{sec:zener-diode}
+\section{Zener-Diode}\label{sec:zener-diode}
     Diodenbelastung: $P_{v_{ZD}}=I_{Z_{Betrieb\max}}\cdot U_Z$\\
     Fall 1: $U_E=konst.,\, I_L\, ist\, variabel$\\
     \hspace*{1cm} ohne Last $I_L=0\: R_V=\frac{U_E-U_Z}{I_Z}$\\
@@ -216,18 +122,23 @@
     Fall 3: $U_E\, und\, I_L\, variabel\quad S=relativer\, Stabilisierungsfaktor$
     \begin{table}[H]
         \renewcommand{\arraystretch}{1.2}
-        \begin{tabularx}{\columnwidth}{l l l}
-            $I_{Z_{\min}}=0,1\cdot I_{Z_{\max}}$ & $R_{Vmax}=\frac{U_{E\min}-U_Z}{I_{Z\min}+I_{L\max}}$ & $S=(1+\frac{R_V}{r_z})\cdot\frac{U_Z}{U_e}$\\
-            $P_{Rv}=\frac{(U_{E\max}-U_Z)^2}{R_V}$ & $R_{V\min}=\frac{U_{E\max}-U_Z}{I_{Z\max}+I_{L\min}}$ & $S_{\min}=(1+\frac{R_V\,gew.\,\min}{r_z})\cdot\frac{U_Z}{U_{E\max}}$\\
-            $U_E=2\cdot U_Z$ & $R_{Vgew\min}=\frac{U{e_{\max}}-U_Z}{I_{ZBetr_{\max}}+I_{L\min}}$ & $I_{Z{Betrieb_{\max}}}=\frac{U{e_{\max}}-U_Z}{R_{Vgew\min}}-I_{L\min}$\\
-            $R_{V_{\min}}\leq R_{V_{gew}} \leq R_{V_{\max}}$ & meist gegen $R_{V_{\max}}$ & \\
-            $I_{L_{\max}}=\frac{U_Z}{R_{L_{\min}}}$ & $I_L=\frac{U_A}{R_L}=\frac{U_Z}{R_L}$ & $I_{L_{\min}}=\frac{U_Z}{R_{L_{\max}}}$ \\
+        \begin{tabularx}{\columnwidth}{l l l}%!Dritte Spalte jeweils auf nächster Zeile, um Code nicht zu breit zu gestalten
+            $I_{Z_{\min}}=0,1\cdot I_{Z_{\max}}$            & $R_{Vmax}=\frac{U_{E\min}-U_Z}{I_{Z\min}+I_{L\max}}$
+                & $S=(1+\frac{R_V}{r_z})\cdot\frac{U_Z}{U_e}$\\
+            $P_{Rv}=\frac{(U_{E\max}-U_Z)^2}{R_V}$          & $R_{V\min}=\frac{U_{E\max}-U_Z}{I_{Z\max}+I_{L\min}}$
+                & $S_{\min}=(1+\frac{R_V\,gew.\,\min}{r_z})\cdot\frac{U_Z}{U_{E\max}}$\\
+            $U_E=2\cdot U_Z$                                & $R_{Vgew\min}=\frac{U{e_{\max}}-U_Z}{I_{ZBetr_{\max}}+I_{L\min}}$
+                & $I_{Z{Betrieb_{\max}}}=\frac{U{e_{\max}}-U_Z}{R_{Vgew\min}}-I_{L\min}$\\
+            $R_{V_{\min}}\leq R_{V_{gew}} \leq R_{V_{\max}}$& meist gegen $R_{V_{\max}}$
+                & \\
+            $I_{L_{\max}}=\frac{U_Z}{R_{L_{\min}}}$         & $I_L=\frac{U_A}{R_L}=\frac{U_Z}{R_L}$
+                & $I_{L_{\min}}=\frac{U_Z}{R_{L_{\max}}}$ \\
         \end{tabularx}
     \end{table}
     Leistung über Diode auch mit berechnen, wenn das nicht explizit gefragt ist.\\
     \input{dinge/z-stabil}
 
-    \section{Spannungsbegrenzung}\label{sec:spannungsbegrenzung}
+\section{Spannungsbegrenzung}\label{sec:spannungsbegrenzung}
     a) Spannungsgrenzen mit Z-Dioden\\
     \begin{minipage}{0.4\columnwidth}
         $pos.\, HW\: U_a=U_S+U_{Z2}$\\
@@ -253,10 +164,9 @@
     \begin{minipage}{0.4\columnwidth}
         \svg[1.0]{spannungsgrenze_klipper}{Spannungsgrenze Klipper}{spannung_klipper}
     \end{minipage}\\
-
     \pagebreak %! harter Pagebreak zum hübsch aussehen, entfernen wenn stört
-    \section{Diode als Schalter}
 
+\section{Diode als Schalter}
     \begin{minipage}{0.2\columnwidth}
         offener Schalter:\\
         $U_B=U_{Schalter}$\\
@@ -288,363 +198,23 @@
     \end{minipage}
 
     $P_{S\max}=Schaltleistung\, der\, Diode=U_{RL}\cdot I_{F\max}\\
-    U_{RL}=U_B-U_s$\hspace*{1cm}$I_{F\max}=\frac{P_{tot}}{U_S}\longrightarrow P_{S\max}=P_{tot}(\frac{U_B}{U_S}-1)$\hspace*{1cm}$R_{L\min}=\frac{(U_B-U_S)^2}{P_{S\max}}$
+    U_{RL}=U_B-U_s$\hspace*{1cm}$I_{F\max}=\frac{P_{tot}}{U_S}\longrightarrow P_{S\max}=P_{tot}(\frac{U_B}{U_S}-1)$
+    \hspace*{1cm}$R_{L\min}=\frac{(U_B-U_S)^2}{P_{S\max}}$
 
-    \section{Kapazitätsdioden}
+\section{Kapazitätsdioden}
     \begin{minipage}{0.3\columnwidth}
         \svg[0.8]{kapazitaetsdiode}{Kapazitätsdiode}{kapazitaetsdiode}
     \end{minipage}
     \begin{minipage}{0.6\columnwidth}
-        Verlustfaktor $\tan\delta=\frac{r_s}{X_C}=2\pi f\cdot C_D\cdot r_s$\\ Güte $Q=\frac{1}{\tan\delta}=\frac{X_C}{r_s}=\frac{1}{2\pi f\cdot C_D\cdot r_s}$\\
+        Verlustfaktor $\tan\delta=\frac{r_s}{X_C}=2\pi f\cdot C_D\cdot r_s$\\
+        Güte $Q=\frac{1}{\tan\delta}=\frac{X_C}{r_s}=\frac{1}{2\pi f\cdot C_D\cdot r_s}$\\
         $\quad\quad X_e=(2\pi f\cdot C_D)^{-1}$\\
-        
     \end{minipage}
 
-    \section{Bipolartransistoren}
-    \svg[0.9]{bjt-pinout}{BJT-Pinout}{bjt-pinout}
-    
-    \begin{minipage}{0.5\columnwidth}
-        Strom und Spannung am NPN-Transistor
-    \end{minipage}
-    \begin{minipage}{0.5\columnwidth}
-        Strom und Spannung am PNP-Transistor    
-    \end{minipage}
-    \noindent\\
-    $I_B\uparrow\rightarrow I_C\uparrow\quad I_B=0\rightarrow I_C=0$
-    \renewcommand{\arraystretch}{1.0}
-    \begin{table}[H]
-        \begin{tabularx}{\columnwidth}{l l l}
-            Wert & Formel & Bemerkung \\
-            Gleichstromverstärkung $B$ & $=\frac{I_C}{I_B}$ & bei $U_{CE}=konst.$ \\
-            dyn. Gleichstromverstärkung $\beta$ & $=h_{21e}=\frac{\Delta I_C}{\Delta I_B}$ & \\
-            $P_V$ & $=U_{CE}\cdot I_C + \underbrace{U_{BE}\cdot I_B}_\text{vernachl. klein}$ & \\
-            Eingangswiderstand Transistor $r_{BE}$ & $=h_{11e}=\frac{\Delta U_{BE}}{\Delta I_{BE}}$ & \\
-            Ausgangsleitwert Transistor $\frac{1}{r_{CE}}$ & $=h_{22e}=\frac{\Delta I_C}{\Delta U_{CE}=\frac{1}{r_{CE}}}$ & \\
-            Steilheit des Transistors $S$ & $=y_{21}=\frac{\Delta U_{BE}}{\Delta I_{BE}}$ & \\
-            $C_1$ & $=\frac{1}{2\pi f_{gu}\cdot (r_e+R_i)}$ & \\
-            $C_2$ & $=\frac{1}{2\pi f_{gu}\cdot (r_a+R_L)}$ & \\
-            $r_e$ & $=R_1\parallel R_2\parallel r_{BE}$
-        \end{tabularx}
-    \end{table}
-    \subsection{Bestimmung $R_C$}
-    $U_{CE}\approx \frac{1}{2}U_B\quad R_C=\frac{U_B-U_{CE(a)}}{I_{C(a)}}$
-
-    \subsection{Erzeugen der Basisvorspannung}
-    \begin{minipage}{0.5\columnwidth}
-        durch Basisvorwiderstand\\
-        $R_B=\frac{U_B-U_{BE(a)}}{I_{B(a)}}$\\ %vorher U_B-U_{CE}, laut Martin falsch
-        $R_C=\frac{U_B-U_{CE}}{I_C}$
-    \end{minipage}
-    \begin{minipage}{0.5\columnwidth}
-        \svg[0.8]{basisvorspannung_widerstand}{Basisvorspannung Widerstand}{bv-spannung-widerstand}
-    \end{minipage}
-
-    \begin{minipage}{0.5\columnwidth}
-        durch Basisspannungsteiler\\
-        $I_q=2\dots 10\cdot I_B\\
-        R_1=\frac{U_B-U_{BE(a)}}{I_q+I_B}\\
-        R_2=\frac{U_{BE(a)}}{I_q}$\\
-        $R_C=\frac{U_B-U_{CE}}{I_C}$
-    \end{minipage}
-    \begin{minipage}{0.5\columnwidth}
-        \svg[0.8]{basisvorspannung_spannungsteiler}{Basisvorspannung Spannungsteiler}{bv-spannung-teiler}
-    \end{minipage}
-
-    \subsection{Thermische Arbeitspunktstabilisierung}
-    \begin{minipage}{0.5\columnwidth}
-        durch Emitter-Widerstand:
-
-        $I_E=I_C+I_B\quad U_{RE}=R_E\cdot I_E\\R_C=\frac{U_B-U_{CE}-U_{RE}}{I_C}$\\ %U_BE zu U_RE korrigiert laut Eric + Martin
-        $C_E\geq\frac{h_{21e}}{2\pi f_{gu}\cdot(h_{11e}+R_i)}=\frac{\beta}{2\pi f_{gu}\cdot(r_{BE}+R_i)}$ %in FS "h_{11}e", ich nehme an Fehler?
-
-        \svg[0.8]{emitter-widerstand}{Emitter-Widerstand}{emitter-widerstand}
-    \end{minipage}
-    \begin{minipage}{0.5\columnwidth}
-        durch Spannungsgegenkopplung:
-
-        $R_1=\frac{U_{CE}-U_{BE(a)}}{I_q+I_B}\quad R_2=\frac{U_{BE}}{I_q}\\
-        R_C=\frac{U_B-U_{CE}}{I_C+I_B+I_q}$ 
-
-        \svg[1.0]{spannungsgegenkopplung}{Spannungsgegenkopplung}{spannungsgegenkopplung}
-    \end{minipage}
-
-    \section{Transistor-Grundschaltungen}
-    \subsection{Emitter-Schaltung}
-    \renewcommand{\arraystretch}{1.0}
-    \begin{table}[H]
-        \begin{tabularx}{\columnwidth}{l l l}
-            Wert & Formel & Bemerkung \\
-            $r_e$ & $=R_1\parallel R_2\parallel r_{BE}$ & wenn $R_E$ mit $C_E$ überbrückt \\
-            $r_e$ & $=R_1\parallel R_2\parallel (r_{BE}+\beta\cdot R_E)$ & ohne $C_E$ \\
-            $r_a$ & $=R_C\parallel r_{CE}$ & \\
-            $V_u$ & $=\frac{\beta}{r_{BE}}\cdot r_a$ & ohne Last \\
-            $V_u$ & $=\frac{\beta}{r_{BE}}\cdot (r_a\parallel R_L)$ & mit Last \\
-            $V_i$ & $=\beta\cdot\frac{r_{CE}}{r_{CE}+R_C}$ & ohne Last \\
-            $V_i$ & $=\beta\cdot\frac{r_{CE}}{r_{CE}+(R_C\parallel R_L)}$ & mit Last \\
-            $V_p$ & $=V_u\cdot V_i\quad \varphi=180^{\circ}$ & \\ %grad per ° ging nicht
-            $C_E$ & $=\frac{h_{21E}}{2\pi f_{gu}\dot (h_{11E}+R_i)}$ & \\
-        \end{tabularx}
-    \end{table}
-    \svg[0.4]{emitter-schaltung}{Emitterschaltung}{emitterschaltung}
-    \subsection{Kollektor-Schaltung}
-       Anmerkung: BST = Basisspannungsteiler
-        \renewcommand{\arraystretch}{1.1}
-        \begin{table}[H]
-            \begin{tabularx}{\columnwidth}{l l l}
-                Wert & Formel & Bemerkung \\
-                $r_{e_{oL}}$ & $=R_1\parallel [r_{BE}+\beta(R_E\parallel r_{CE})]$ & ohne BST \\ %das hier ohne? in Original beides mit
-                $r_{e_{oL}}$ & $=R_1\parallel R_2\parallel [r_{BE}+\beta(R_E\parallel r_{CE})]$ & mit BST \\
-                $r_{e_{mL}}$ & $=R_1\parallel [r_{BE}+\beta(R_E\parallel r_{CE}\parallel R_L)]$ & ohne BST \\ %das hier ohne? in Original beides mit
-                $r_{e_{mL}}$ & $=R_1\parallel R_2\parallel [r_{BE}+\beta(R_E\parallel r_{CE}\parallel R_L)]$ & mit BST \\
-                $r_a$ & $=R_E\parallel\frac{r_{BE}*R_i}{\beta}$ & \\
-                $V_u$ & $=\frac{\beta\cdot R_E}{\beta\cdot R_E+r_{BE}}$ & ohne Last \\
-                $V_u$ & $=\frac{\beta\cdot(R_E\parallel R_L)}{\beta\cdot (R_E\parallel R_L)+r_{BE}}$ & mit Last \\
-                $V_i$ & $=\beta\cdot\frac{r_{CE}(1+\beta)}{R_E+r_{CE}}$ & ohne Last \\
-                $V_i$ & $=\beta\cdot\frac{r_{CE}(1+\beta)}{(R_E\parallel R_L)+r_{CE}}$ & mit Last \\
-                $V_p$ & $=V_u\cdot V_i\quad \varphi=0^{\circ}$ & \\ %grad per ° ging nicht
-            \end{tabularx}
-        \end{table}
-    \svg[0.4]{kollektor-schaltung-martin}{Martins Kollektorschaltung als SVG}{kollektorschaltung}
-    \subsection{Basis-Schaltung}
-    \begin{minipage}{0.3\columnwidth}
-        \begin{table}[H]
-            \begin{tabularx}{\columnwidth}{l l}
-                Wert & Formel \\
-                $r_e$ & $=R_E\parallel\frac{r_{BE}}{\beta}$ \\
-                $r_a$ & $=R_C\parallel r_{CE} $ \\
-                $V_u$ & $=\frac{\beta}{r_{BE}}\cdot r_a$ \\
-                $V_i$ & $=\frac{\beta}{\beta +1}$ \\
-                $V_p$ & $=V_u\cdot V_i$\\
-                $\varphi$ & $=0^{\circ}$ \\ %grad per ° ging nicht
-            \end{tabularx}
-        \end{table}
-    \end{minipage}
-    \begin{minipage}{0.7\columnwidth}
-        \input{dinge/basisschaltung}
-    \end{minipage}
-    \subsection{Selektivverstärker} %TODO Schaltung? - keine ahnung. :c ~w
-    \begin{minipage}{0.45\columnwidth}
-        \renewcommand{\arraystretch}{1.05}
-        \begin{table}[H]
-            \begin{tabularx}{\columnwidth}{l l}
-                Wert & Formel \\
-                $f_o$ & $=\frac{1}{2\pi\sqrt{L\cdot C}}$ \\
-                $Q=G\ddot{u}te$ & $=\frac{R\parallel r_{CE}}{X_C}=\frac{R\parallel r_{CE}}{X_L}$ \\
-                $X_C$ & $=\frac{1}{2\pi f\cdot C}$ \\
-                $X_L$ & $=2\pi f\cdot L$ \\
-            \end{tabularx}
-        \end{table}
-    \end{minipage}
-    \begin{minipage}{0.45\columnwidth}
-        \renewcommand{\arraystretch}{1.05}
-        \begin{table}[H]
-            \begin{tabularx}{\columnwidth}{l l}
-                Wert & Formel \\
-                $b_{oL}$ & $=\frac{f_0}{Q}=\frac{f_0\cdot X_C}{R\parallel r_{CE}}=\frac{f_0\cdot X_L}{R\parallel r_{CE}}$ \\
-                $b_{mL}$ & $=\frac{f_0\cdot X_C}{R\parallel r_{CE}\cdot R_L}=\frac{r_0\cdot X_L}{R\parallel r_{CE}\parallel R_L}$ \\
-                $V_u$ & $=Y_{21}(R\parallel r_{CE})$ \\
-            \end{tabularx}
-        \end{table}
-    \end{minipage}
-    \subsection{Schaltverstärker}
-    Schaltfrequenz $f_{\max}=\frac{1}{t_{ein}+t_{aus}}\quad R_1=\frac{U_B-U_{CX}}{I_{BX}}\quad R_2=\frac{U_e-U_{BE}}{I_{BX}}$
-    \subsubsection{Schaltverstärker mit Hilfsspannungen}
-    \large
-    $I_{BX}=\frac{\ddot{u}\cdot U_B}{R_c\cdot B}\quad U_{IH}\geq R_1(I_{BX}+\frac{U_{BEX}+|U_H|}{R_2})+U_{BEX}\\\\
-    \frac{R_1\cdot (U_{BEX}+|U_H|)}{U_{IH}-U_{BEX}-I_{BX}\cdot R_1}\leq R_2\leq\frac{R_1(U_{BEY}+|U_H|)}{U_{IL}-U_{BEY}}$\\\\
-    $R_1=\frac{(U_{IH}-U_{BEX})(U_{BEY}+U_H)-(U_{BEX}+U_H)(U_{IL}-U_{BEY})}{I_{BX}\cdot (U_{BEY}+U_H)}$\\\\
-    \normalsize
-    standardmäßig: $U_{BEX}=0,8V\quad U_{BEY}=0,2V$
-    \subsection{Feldeffekt-Transistoren}
-    Vorwärtssteilheit $y_{21}=\frac{\Delta I_D}{\Delta U_{GS}}=S$\quad Ausgangsleitwert $y_{22}=\frac{\Delta I_D}{\Delta U_{DS}}=\frac{1}{r_{DS}}$\\
-    Automatische Gate-Spannungs-Erzeugung $U_{RS}=I_D\cdot R_S\quad P_{tot}=U_{DS}\cdot I_D$\\
-    Gatespannungserzeuger mit Gatespannungsteiler $R_1=\frac{U_B-U_{GS}-U_{RS}}{I_q}\quad R_2=\frac{U_{GS}+U_{RS}}{I_q}$
-    \svg[0.7]{fets}{FETs}{fets}
-    \subsubsection{Source-Schaltung}
-    \begin{minipage}{0.5\columnwidth}
-        \renewcommand{\arraystretch}{1.01}
-        \begin{table}[H]
-            \begin{tabularx}{\columnwidth}{l l l}
-                Wert & Formel & Bermerkung\\
-                $C_S$ & $=0,2\cdot\frac{y_{21}}{f_{gu}}$ & \\ %!korrigiert von y22, Hinweis von Martin
-                $C_1$ & $=\frac{1}{2\pi f_{gu}(R_i+r_e)}$ & \\
-                $C_2$ & $=\frac{1}{2\pi f_{gu}(R_L+r_a)}$ & \\
-                $R_G$ & $=\frac{U_{GS}=0,5V}{I_{GSS}}$ & größere $I_{GSS}$ wählen \\
-                $R_{GS}$ & $=\frac{U_{GS}}{I_{GSS}}$ & gr. $U_{GS}$, kl. $I_{GSS}$ wählen \\
-                $R_S$ & $=\frac{U_{GS}}{I_D}=\frac{U_{RS}}{I_D}$ & kleine $U_{GS}$ wählen \\
-                $r_a$ & $=R_D\parallel r_{DS}$ & \\
-                $r_{DS}$ & $=\frac{1}{y_{22}}$ & \\
-                $R_D$ & $=\frac{U_B-U_{DS}-[U_{RS}\, o.\, U_{GS}]}{I_D}=\frac{U_D}{I_D}$ & \\
-                $r_e$ & $=\frac{R_G\cdot R_{GS}}{R_G+R_{GS}}=R_G\parallel R_{GS}$ & oder:\\
-                $r_e$ & $=R_1\parallel R_2\parallel R_{GS}$ & für Gatesp. Teiler \\
-                $V_U$ & $=y_{21}\cdot r_a$ & \\
-                $U_{RG}$ & $=-I_{GSS}\cdot R_G\quad\varphi=180^{\circ}$ & \\ %grad per ° ging nicht
-            \end{tabularx}
-        \end{table}
-    \end{minipage}
-    \begin{minipage}{0.5\columnwidth}
-        \vspace*{0.5cm}
-        \svg[1.0]{source-schaltung}{Source-Schaltung}{sourceschaltung}
-    \end{minipage}
-    \subsubsection{Drain-Schaltung}
-    $r_e=R_{GS}(1+y_{21}\cdot R_S)\parallel R_G$ bzw. bei Gatespannungsteiler: $r_e=R_{GS}(1+y_{21}\cdot R_S)\parallel R_1\parallel R_2$ \\
-    $r_a=R_S\parallel \frac{1}{y_{21}}\quad V_U=\frac{y_{21}\cdot R_S}{1+y_{21}\cdot R_S}\: \varphi=0^{\circ}$ \\ %grad per ° ging nicht
-    %TODO @colin "folgende Zeile weird, da sind wahrscheinlich Fehler" - ignorieren weil mir auch zu hoch ~c
-    $R_G=\frac{-U_{GS}}{I_{GSS}}\quad R_S=\frac{U_{RS}}{I_D}\quad R_{GS}=\frac{-U_{GS}}{-I_{GSS}}\quad R_1=\frac{U_B-U_{GS}-U_S}{I_q}\quad R_2=\frac{U_{GS}+U_S}{I_q}$ %R1, R2 laut Kevin
-    \svg[1.0]{drain-schaltung}{Drainschaltung}{drainschaltung}
-    \section{OPV - Operationsverstärker}
-    \begin{minipage}{0.5\columnwidth}
-        \renewcommand{\arraystretch}{1.05}
-        \begin{table}[H]
-            \begin{tabularx}{\columnwidth}{l l}
-                Wert & Formel \\
-                $V_{ldb}$ & $=20\lg\frac{U_a}{U_e}$ (Verstärkung)\\
-                $I_K$ & $=\frac{U_2-U_1}{Z_K}\quad I_1+I_K=0$\\
-                $\underline{Z_1}$ & $=\frac{\underline{U_1}}{\underline{I_1}}=\frac{\underline{U_1}}{\underline{-I_K}}$\\
-                $\underline{Z_1}$ & $=\frac{Z_K}{-V_0+1}$\\
-                $U_1$ & $=\frac{U_2}{V_0}$ \\
-                $z_2$ & $=\frac{z_K}{1+\frac{1}{-V_0}}$
-            \end{tabularx}
-        \end{table}
-    \end{minipage}
-    \begin{minipage}{0.5\columnwidth}
-        \bild[1.0]{opv.png}{Platzh. für gut}{opv}
-    \end{minipage}
-    \subsection{Anwendungen mit frequenzunabhängiger Gegenkopplung}
-    \subsubsection{Invertierender Verstärker/Umkehrverstärker}
-    \begin{minipage}{0.6\columnwidth}
-        \renewcommand{\arraystretch}{1.05}
-        \begin{table}[H]
-            \begin{tabularx}{\columnwidth}{l l}
-                Wert & Formel \\
-                $r_e$ & $=R_1$ \\
-                $r_a'$ & $=r_a\cdot\frac{V}{V_0}$\\
-                $U_a$ & $=-\frac{R_2}{R_1}\cdot U_e$ \\
-                $V$ & $=-\frac{R_2}{R_1}$ \\
-            \end{tabularx}
-        \end{table}
-        Einfluss der endlichen Verstärkung\\auf einen realen OPV:\\
-        $V=-\frac{V_0\cdot R_K}{R_K+R_1\cdot V_0+R_1}$
-    \end{minipage}
-    \begin{minipage}{0.4\columnwidth}
-        \bild[1.0]{opv-umkehrverst.png}{Platzh. für gut}{umkehrverstärker}
-    \end{minipage}
-    \subsubsection{Nichtinvertierter Verstärker/Elektrometerverstärker}
-    \begin{minipage}{0.6\columnwidth}
-        \renewcommand{\arraystretch}{1.1}
-        \begin{table}[H]
-            \begin{tabularx}{\columnwidth}{l l}
-               Wert & Formel \\
-               $V$ & $=1+\frac{R_K}{R_1}$ \\
-               $U_a$ & $=(1+\frac{R_K}{R_1})\cdot U_e$ \\
-               $R_2$ & $\longrightarrow R_K$
-            \end{tabularx}
-        \end{table}
-    \end{minipage}
-    \begin{minipage}{0.4\columnwidth}
-        \bild[1.0]{opv-elmverst.png}{Platzh. für gut}{elmverst}
-    \end{minipage}
-    \subsubsection{Spannungsfolger}
-    \begin{minipage}{0.6\columnwidth}
-        \begin{table}[H]
-            \begin{tabularx}{\columnwidth}{l l}
-               Wert & Formel \\
-               $U_a$ & $=U_e$ \\
-               $V$ & $=1$
-            \end{tabularx}
-        \end{table}
-    \end{minipage}
-    \begin{minipage}{0.4\columnwidth}
-        \bild[1.0]{opv-spannungsfolger.png}{Platzh. für gut}{spannungsfolger}
-    \end{minipage}
-    \subsubsection{Addierverstärker}
-    \begin{minipage}{0.6\columnwidth}
-        \renewcommand{\arraystretch}{1.1}
-        \begin{table}[H]
-            \begin{tabularx}{\columnwidth}{l l}
-               Wert & Formel \\
-               $-U_a$ & $=(I_1+I_2)\cdot R_0$\\
-               & $=\frac{R_0}{R_1}\cdot U_{e1}+\frac{R_0}{R_2}\cdot U_{e2}$ \\
-               $-U_a$ & $=(U_{e1}+U_{e2})\cdot\frac{R_0}{R_1}\leftarrow$ nur für $R_1=R_2$ !\\
-               $-I_K$ & $=I_1+I_2$\\
-               $V$ & $=1$
-            \end{tabularx}
-        \end{table}
-    \end{minipage}
-    \begin{minipage}{0.4\columnwidth}
-        \bild[1.0]{opv-addverst.png}{Platzh. für gut}{addierverstärker}
-    \end{minipage}
-    \subsubsection{Subtrahierverstärker}
-    \begin{minipage}{0.6\columnwidth}
-        $-U_a=\frac{R_K}{R_1}\cdot U_{e1}-(1+\frac{R_K}{R_1})\cdot \frac{R_3}{R_2+R_3}\cdot U_{e2}$
-    \end{minipage}
-    \begin{minipage}{0.4\columnwidth}
-        \bild[1.0]{opv-subverst.png}{Platzh. für gut}{subtrahierverstärker}
-    \end{minipage}
-    \subsection{OPV mit frequenzunabhängiger Gegenkompplung}
-    \begin{minipage}{0.5\columnwidth}
-        \subsubsection{Integrierverstärker}
-        $-U_a=\frac{1}{RC}\cdot \int U_e(t) dt+U_0$\\ %korrektur laut OPV Stand 060321
-        \bild[0.8]{opv-intverst.png}{Platzh. für gut}{integrierverstärker}
-    \end{minipage}
-    \begin{minipage}{0.5\columnwidth}
-        \subsubsection{Differenzierer}
-        $i_c=C\cdot\frac{du_c}{dt}\quad i_k=\frac{U_a}{R}=-i_c\quad -U_a=RC\cdot\frac{du_e}{dt}$\\
-        \bild[0.8]{opv-differenzierer.png}{Platzh. für gut}{differenzierer}
-    \end{minipage}
-    \subsubsection{Komparator/Vergleicher}
-    \begin{center}
-        invertierter Komparator / nicht-invertierter Komparator
-        \bild[1.0]{opv-komparator.png}{Platzh. für gut}{komparator}
-    \end{center}
-    \subsection{Schmidtt-Trigger}
-    \begin{minipage}[t][0.4\pdfpageheight][t]{0.5\columnwidth} %extra Argumente erzeugen 0.4xPapierhöhe hohe, top-aligned..te minipage
-        \subsubsection{invertierter SWS}
-        \renewcommand{\arraystretch}{1.1}
-        \begin{table}[H]
-            \begin{tabularx}{\columnwidth}{l l}
-               Wert & Formel \\
-               $U_{ein}$ & $=\frac{R_2}{R_1+R_2}\cdot U_{a-}$ \\
-               $U_{aus}$ & $=\frac{R_2}{R_1+R_2}\cdot U_{a+}$ \\
-               $U_{Hys}$ & $U_{aus}-U_{ein}$
-            \end{tabularx}
-        \end{table}
-        \bild[0.8]{schmidtt-inv.png}{Platzh. für gut}{sws-inv}
-    \end{minipage}
-    \begin{minipage}[t][0.4\pdfpageheight][t]{0.5\columnwidth}
-        \subsubsection{nichtinvertierter SWS}
-        \renewcommand{\arraystretch}{1.1}
-        \begin{table}[H]
-            \begin{tabularx}{\columnwidth}{l l}
-               Wert & Formel \\
-               $U_{ein}$ & $=-\frac{R_1}{R_2}\cdot U_{a-}$ \\
-               $U_{aus}$ & $=-\frac{R_1}{R_2}\cdot U_{a+}$ \\
-            \end{tabularx}
-        \end{table}
-        \bild[0.8]{schmidtt-ninv.png}{Platzh. für gut}{sws-ninv}
-    \end{minipage}
-    \begin{minipage}[t][0.4\pdfpageheight][t]{0.5\columnwidth}
-    \subsubsection{nichtinvertierter SWS mit Referenzspannungsquelle}
-        \renewcommand{\arraystretch}{1.1}
-        \begin{table}[H]
-            \begin{tabularx}{\columnwidth}{l l}
-               Wert & Formel \\
-               $U_{ein}$ & $=-\frac{R_1}{R_2}\cdot U_{a\min}+U_{ref}(1+\frac{R_1}{R_2})$\\
-               $U_{aus}$ & $=-\frac{R_1}{R_2}\cdot U_{a\max}+U_{ref}(1+\frac{R_1}{R_2})$\\
-            \end{tabularx}
-        \end{table}
-        \bild[0.8]{schmidtt-ninv-ref.png}{Platzh. für gut}{sws-ninv-ref}
-    \end{minipage}
-    \begin{minipage}[t][0.4\pdfpageheight][t]{0.5\columnwidth}
-    \subsubsection{invertierter SWS mit Referenzspannungsquelle}
-    \renewcommand{\arraystretch}{1.1}
-        \begin{table}[H]
-            \begin{tabularx}{\columnwidth}{l l}
-               Wert & Formel \\ %!beide Formeln in Original mit "-" vorn dran, laut Hannes nicht
-               $U_{ein}$ & $=\frac{R_2}{R_1+R_2}\cdot U_{a\min}+U_{ref}(1-\frac{R_2}{R_1+R_2})$\\
-               $U_{aus}$ & $=\frac{R_2}{R_1+R_2}\cdot U_{a\max}+U_{ref}(1-\frac{R_2}{R_1+R_2})$\\
-            \end{tabularx}
-        \end{table}
-        \bild[0.8]{schmidtt-inv-ref.png}{Platzh. für gut}{sws-inv-ref}
-    \end{minipage}
+\section{Bipolartransistoren}
+    \input{dinge/bipolartransistoren}
+\section{Transistor-Grundschaltungen}
+    \input{dinge/transistor-grundschaltungen}
+\section{OPV - Operationsverstärker}
+    \input{dinge/opv}
 \end{document}

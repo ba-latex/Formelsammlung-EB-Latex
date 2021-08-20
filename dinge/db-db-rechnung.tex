@@ -1,0 +1,52 @@
+$V_P=\frac{P_{aus}}{P_{ein}}\quad\quad 
+    V_U=\frac{U_{aus}}{U_{ein}}\quad\quad
+    V_{P_{dB}}=10\lg\frac{P_{aus}}{P_{ein}}\quad\quad
+    V_{U_{dB}}=20\lg\frac{U_{aus}}{U_{ein}}$ \\
+    negativer dB-Wert: Dämpfung (z.B. $20dB\rightarrow $x$100; -30dB\rightarrow $x$\frac{1}{1000}$)\\
+    Stromverstärkung (ungewöhnlich) verhält sich wie Spannungsverstärkung\\
+
+    \begin{minipage}{0.5\columnwidth}
+        \renewcommand{\arraystretch}{0.9}
+        \begin{table}[H]
+            \centering
+            \begin{tabular}{|l|l|l|}
+                \hline
+                $dB$  & $V_P$                 & $V_U$                  \\ \hline
+                $0$   & $1$                   & $1$                    \\ \hline
+                $1$   & $\sqrt[10]{10}=1,26$  & $\sqrt[20]{10}=1,12$   \\ \hline
+                $2$   & $\sqrt[5]{10}=1,58$   & $\sqrt[10]{10}=1,26$   \\ \hline
+                $3$   & $2$                   & $\sqrt{2}=1,41$        \\ \hline
+                $6$   & $4$                   & $2$                    \\ \hline
+                $10$  & $10$                  & $\sqrt{10}=3,16$       \\ \hline
+                $20$  & $100$                 & $10$                   \\ \hline
+                $40$  & $10^4$                & $100$                  \\ \hline
+                $60$  & $10^6$                & $1000$                 \\ \hline
+                $80$  & $10^8$                & $10^4$                 \\ \hline
+                $100$ & $10^{10}$             & $10^5$                 \\ \hline
+            \end{tabular}
+        \end{table}
+    \end{minipage}
+    \begin{minipage}{0.5\columnwidth}
+        \textbf{bezogene dB-Werte:}
+        \renewcommand{\arraystretch}{0.9}
+        \begin{table}[H]
+            \centering
+            \begin{tabular}{|l|l|l|}
+                \hline
+                Größe          & Bezugswert & Einheit    \\ \hline
+                Leistung $P_0$ & $1mW$      & $dBm$      \\ \hline
+                Leistung $P_0$ & $1W$       & $dBW$      \\ \hline
+                Spannung $U_0$ & $1\mu V$   & $dB\mu V$  \\ \hline
+                Spannung $U_0$ & $1V$       & $dBV$      \\ \hline
+                Spannung $U_0$ & $774,6mV$  & $dBu$      \\ \hline
+                Strom $I_0$    & $1A$       & $dBA$      \\ \hline
+                Strom $I_0$    & $1,291mA$  & $dBi$      \\ \hline
+            \end{tabular}
+        \end{table}
+        $dBm$: $V_{P_{dB}}=10\lg\frac{P_{aus}}{1mW}$\\
+        $db\mu$: $V_{U_{dB}}=20\lg\frac{U_{aus}}{1\mu V}$
+    \end{minipage}
+
+    $\longrightarrow$ Zerlegen\\
+    $V_{ges}=\prod\limits_{i=1}^n V_i=V_1\cdot V_2\cdot V_3\cdot\ \dots\ \cdot V_n\\
+    V_{ges_{dB}}=\sum\limits_{i=1}^n V_i=V_{1_{dB}}+V_{2_{dB}}+V_{3_{dB}}+\ \dots\ +V_{n_{dB}}$\\

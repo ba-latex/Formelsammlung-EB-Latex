@@ -1,0 +1,39 @@
+\begin{table}[H]
+    \begin{tabularx}{\columnwidth}{|X|X|}
+        \hline
+        \multicolumn{2}{|c|}{\textbf{Besetzungswahrscheinlichkeit:}}\\
+        \hline
+        $P(W)=\frac{1}{1+e^{\frac{W-W_F}{k\cdot T}}}$ & $k=1,38\cdot 10^{-23}\frac{Ws}{K}$ \\
+        & $T=$ absolute Temperatur \\
+        & $W_F=$ Fermi-Nivaeu \\
+        \hline
+        \multicolumn{1}{|c|}{$T=0$}                   & \multicolumn{1}{c|}{$T>0$} \\
+        $W>W_F\rightarrow 0$                          & $P(W_F)=\frac{1}{2}$\\
+        $W<W_F\rightarrow 1$                          & \\
+        \hline
+    \end{tabularx}
+\end{table}
+\begin{table}[H]
+    \begin{tabularx}{\textwidth}{|X X|}
+        \hline
+        \multicolumn{2}{|c|}{\textbf{Legende:}}\\
+        \hline
+        $I_F=$Effektivwert                      & $I_{FM}=$periodischer Spitzenstrom \\
+        $I_{FS}=$Stoßspitzenstrom               & $I_0=$Richtstrom (arithm. Mittel)\\
+        $t_i=$ Einschaltdauer                   & $T=$ Gesamtdauer \\
+        \multicolumn{2}{|c|}{$g=\frac{t_i}{T}$}\\
+        $U_{RRM}=$period. Spitzensperrspannung  & $U_{RSM}=$eindeut. Spitzensperrspannung \\
+        $P_{tot}=$tot. Verlustleistung          & $P_V=U_F\cdot I_F + U_R\cdot I_R$ \\
+        & $P_V\leq P_{tot}$ \\
+        \multicolumn{2}{|c|}{$R_{th JU}=$therm. Widerstand zw. Sperrschicht \& Umgebung}\\
+        \multicolumn{2}{|c|}{$R_{th JU}=\frac{\vartheta_J-\vartheta_U}{P_V} \bfrac{\vartheta_J\ Temperatur\ Sperrschicht}{\vartheta_U\ Temperatur\ Umgebung}\quad
+        R_{th_{JU}}=R_{th_{JG}}+R_{th_{GK}}+R_{th_{K}}\quad [R_{th}]=\frac{K}{W}$}\\
+        \multicolumn{2}{|c|}{$P_{V_{\max}}=\frac{\vartheta_{I_{\max}}-\vartheta_U}{R_{th_{JG}}+R_{th_{GK}}+R_{th_{K}}}$}\\
+        $R_F=$Gleichstromwiderstand Diode       & $R_R=$stat. Sperrwiderstand \\
+        $r_F=$dyn. Durchlasswiderstand          & $C_D=$Diodenkapazität \\
+        $R=\frac{U}{I}$                         & $r_f=\frac{\Delta U_F}{\Delta I_F}$ \\
+        $t_{rr}=$Sperrverzögerungszeit          & \\
+        \hline
+    \end{tabularx}
+\end{table}
+\svg[1.0]{durchlassstrom}{Durchlassstrom}{durchlassstrom}

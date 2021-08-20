@@ -1,0 +1,154 @@
+\begin{minipage}{0.5\columnwidth}
+    \renewcommand{\arraystretch}{1.05}
+    \begin{table}[H]
+        \begin{tabularx}{\columnwidth}{l l}
+            Wert                & Formel \\
+            $V_{ldb}$           & $=20\lg\frac{U_a}{U_e}$ (Verstärkung)\\
+            $I_K$               & $=\frac{U_2-U_1}{Z_K}\quad I_1+I_K=0$\\
+            $\underline{Z_1}$   & $=\frac{\underline{U_1}}{\underline{I_1}}=\frac{\underline{U_1}}{\underline{-I_K}}$\\
+            $\underline{Z_1}$   & $=\frac{Z_K}{-V_0+1}$\\
+            $U_1$               & $=\frac{U_2}{V_0}$ \\
+            $z_2$               & $=\frac{z_K}{1+\frac{1}{-V_0}}$
+        \end{tabularx}
+    \end{table}
+\end{minipage}
+\begin{minipage}{0.5\columnwidth}
+    \bild[1.0]{opv.png}{Platzh. für gut}{opv}
+\end{minipage}
+\subsection{Anwendungen mit frequenzunabhängiger Gegenkopplung}
+    \subsubsection{Invertierender Verstärker/Umkehrverstärker}
+        \begin{minipage}{0.6\columnwidth}
+            \renewcommand{\arraystretch}{1.05}
+            \begin{table}[H]
+                \begin{tabularx}{\columnwidth}{l l}
+                    Wert    & Formel \\
+                    $r_e$   & $=R_1$ \\
+                    $r_a'$  & $=r_a\cdot\frac{V}{V_0}$\\
+                    $U_a$   & $=-\frac{R_2}{R_1}\cdot U_e$ \\
+                    $V$     & $=-\frac{R_2}{R_1}$ \\
+                \end{tabularx}
+            \end{table}
+            Einfluss der endlichen Verstärkung\\auf einen realen OPV:\\
+            $V=-\frac{V_0\cdot R_K}{R_K+R_1\cdot V_0+R_1}$
+        \end{minipage}
+        \begin{minipage}{0.4\columnwidth}
+            \bild[1.0]{opv-umkehrverst.png}{Platzh. für gut}{umkehrverstärker}
+        \end{minipage}
+    \subsubsection{Nichtinvertierter Verstärker/Elektrometerverstärker}
+        \begin{minipage}{0.6\columnwidth}
+            \renewcommand{\arraystretch}{1.1}
+            \begin{table}[H]
+                \begin{tabularx}{\columnwidth}{l l}
+                    Wert  & Formel \\
+                    $V$   & $=1+\frac{R_K}{R_1}$ \\
+                    $U_a$ & $=(1+\frac{R_K}{R_1})\cdot U_e$ \\
+                    $R_2$ & $\longrightarrow R_K$
+                \end{tabularx}
+            \end{table}
+        \end{minipage}
+        \begin{minipage}{0.4\columnwidth}
+            \bild[1.0]{opv-elmverst.png}{Platzh. für gut}{elmverst}
+        \end{minipage}
+    \subsubsection{Spannungsfolger}
+        \begin{minipage}{0.6\columnwidth}
+            \begin{table}[H]
+                \begin{tabularx}{\columnwidth}{l l}
+                    Wert & Formel \\
+                    $U_a$ & $=U_e$ \\
+                    $V$ & $=1$
+                \end{tabularx}
+            \end{table}
+        \end{minipage}
+        \begin{minipage}{0.4\columnwidth}
+            \bild[1.0]{opv-spannungsfolger.png}{Platzh. für gut}{spannungsfolger}
+        \end{minipage}
+    \subsubsection{Addierverstärker}
+        \begin{minipage}{0.6\columnwidth}
+            \renewcommand{\arraystretch}{1.1}
+            \begin{table}[H]
+                \begin{tabularx}{\columnwidth}{l l}
+                    Wert    & Formel \\
+                    $-U_a$  & $=(I_1+I_2)\cdot R_0$\\
+                            & $=\frac{R_0}{R_1}\cdot U_{e1}+\frac{R_0}{R_2}\cdot U_{e2}$ \\
+                    $-U_a$  & $=(U_{e1}+U_{e2})\cdot\frac{R_0}{R_1}\leftarrow$ nur für $R_1=R_2$ !\\
+                    $-I_K$  & $=I_1+I_2$\\
+                    $V$     & $=1$
+                \end{tabularx}
+            \end{table}
+        \end{minipage}
+        \begin{minipage}{0.4\columnwidth}
+            \bild[1.0]{opv-addverst.png}{Platzh. für gut}{addierverstärker}
+        \end{minipage}
+    \subsubsection{Subtrahierverstärker}
+        \begin{minipage}{0.6\columnwidth}
+            $-U_a=\frac{R_K}{R_1}\cdot U_{e1}-(1+\frac{R_K}{R_1})\cdot \frac{R_3}{R_2+R_3}\cdot U_{e2}$
+        \end{minipage}
+        \begin{minipage}{0.4\columnwidth}
+            \bild[1.0]{opv-subverst.png}{Platzh. für gut}{subtrahierverstärker}
+        \end{minipage}
+\subsection{OPV mit frequenzunabhängiger Gegenkompplung}
+    \begin{minipage}{0.5\columnwidth}
+        \subsubsection{Integrierverstärker}
+        $-U_a=\frac{1}{RC}\cdot \int U_e(t) dt+U_0$\\ %korrektur laut OPV Stand 060321
+        \bild[0.8]{opv-intverst.png}{Platzh. für gut}{integrierverstärker}
+    \end{minipage}
+    \begin{minipage}{0.5\columnwidth}
+        \subsubsection{Differenzierer}
+        $i_c=C\cdot\frac{du_c}{dt}\quad i_k=\frac{U_a}{R}=-i_c\quad -U_a=RC\cdot\frac{du_e}{dt}$\\
+        \bild[0.8]{opv-differenzierer.png}{Platzh. für gut}{differenzierer}
+    \end{minipage}
+    \subsubsection{Komparator/Vergleicher}
+        \begin{center}
+            invertierter Komparator / nicht-invertierter Komparator
+            \bild[1.0]{opv-komparator.png}{Platzh. für gut}{komparator}
+        \end{center}
+\subsection{Schmidtt-Trigger}
+    \begin{minipage}[t][0.4\pdfpageheight][t]{0.5\columnwidth} %extra Argumente erzeugen 0.4xPapierhöhe hohe, top-aligned..te minipage
+        \subsubsection{invertierter SWS}
+        \renewcommand{\arraystretch}{1.1}
+        \begin{table}[H]
+            \begin{tabularx}{\columnwidth}{l l}
+                Wert      & Formel \\
+                $U_{ein}$ & $=\frac{R_2}{R_1+R_2}\cdot U_{a-}$ \\
+                $U_{aus}$ & $=\frac{R_2}{R_1+R_2}\cdot U_{a+}$ \\
+                $U_{Hys}$ & $U_{aus}-U_{ein}$
+            \end{tabularx}
+        \end{table}
+        \bild[0.8]{schmidtt-inv.png}{Platzh. für gut}{sws-inv}
+    \end{minipage}
+    \begin{minipage}[t][0.4\pdfpageheight][t]{0.5\columnwidth}
+        \subsubsection{nichtinvertierter SWS}
+        \renewcommand{\arraystretch}{1.1}
+        \begin{table}[H]
+            \begin{tabularx}{\columnwidth}{l l}
+                Wert      & Formel \\
+                $U_{ein}$ & $=-\frac{R_1}{R_2}\cdot U_{a-}$ \\
+                $U_{aus}$ & $=-\frac{R_1}{R_2}\cdot U_{a+}$ \\
+            \end{tabularx}
+        \end{table}
+        \bild[0.8]{schmidtt-ninv.png}{Platzh. für gut}{sws-ninv}
+    \end{minipage}
+    \begin{minipage}[t][0.4\pdfpageheight][t]{0.5\columnwidth}
+        \subsubsection{nichtinvertierter SWS mit Referenzspannungsquelle}
+        \renewcommand{\arraystretch}{1.1}
+        \begin{table}[H]
+            \begin{tabularx}{\columnwidth}{l l}
+                Wert      & Formel \\
+                $U_{ein}$ & $=-\frac{R_1}{R_2}\cdot U_{a\min}+U_{ref}(1+\frac{R_1}{R_2})$\\
+                $U_{aus}$ & $=-\frac{R_1}{R_2}\cdot U_{a\max}+U_{ref}(1+\frac{R_1}{R_2})$\\
+            \end{tabularx}
+        \end{table}
+        \bild[0.8]{schmidtt-ninv-ref.png}{Platzh. für gut}{sws-ninv-ref}
+    \end{minipage}
+    \begin{minipage}[t][0.4\pdfpageheight][t]{0.5\columnwidth}
+        \subsubsection{invertierter SWS mit Referenzspannungsquelle}
+        \renewcommand{\arraystretch}{1.1}
+        \begin{table}[H]
+            \begin{tabularx}{\columnwidth}{l l}
+                Wert      & Formel \\ %!beide Formeln in Original mit "-" vorn dran, laut Hannes nicht
+                $U_{ein}$ & $=\frac{R_2}{R_1+R_2}\cdot U_{a\min}+U_{ref}(1-\frac{R_2}{R_1+R_2})$\\
+                $U_{aus}$ & $=\frac{R_2}{R_1+R_2}\cdot U_{a\max}+U_{ref}(1-\frac{R_2}{R_1+R_2})$\\
+            \end{tabularx}
+        \end{table}
+        \bild[0.8]{schmidtt-inv-ref.png}{Platzh. für gut}{sws-inv-ref}
+    \end{minipage}

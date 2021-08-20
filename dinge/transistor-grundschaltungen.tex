@@ -1,0 +1,127 @@
+\subsection{Emitter-Schaltung}
+    \renewcommand{\arraystretch}{0.9}
+    \begin{table}[H]
+        \begin{tabularx}{\columnwidth}{l l l}
+            Wert  & Formel                                                  & Bemerkung \\
+            $r_e$ & $=R_1\parallel R_2\parallel r_{BE}$                     & wenn $R_E$ mit $C_E$ überbrückt \\
+            $r_e$ & $=R_1\parallel R_2\parallel (r_{BE}+\beta\cdot R_E)$    & ohne $C_E$ \\
+            $r_a$ & $=R_C\parallel r_{CE}$                                  & \\
+            $V_u$ & $=\frac{\beta}{r_{BE}}\cdot r_a$                        & ohne Last \\
+            $V_u$ & $=\frac{\beta}{r_{BE}}\cdot (r_a\parallel R_L)$         & mit Last \\
+            $V_i$ & $=\beta\cdot\frac{r_{CE}}{r_{CE}+R_C}$                  & ohne Last \\
+            $V_i$ & $=\beta\cdot\frac{r_{CE}}{r_{CE}+(R_C\parallel R_L)}$   & mit Last \\
+            $V_p$ & $=V_u\cdot V_i\quad \varphi=180^{\circ}$                & \\ %grad per ° ging nicht
+            $C_E$ & $=\frac{h_{21E}}{2\pi f_{gu}\dot (h_{11E}+R_i)}$        & \\
+        \end{tabularx}
+    \end{table}
+    \svg[0.4]{emitter-schaltung}{Emitterschaltung}{emitterschaltung}
+\subsection{Kollektor-Schaltung}
+    Anmerkung: BST = Basisspannungsteiler
+    \renewcommand{\arraystretch}{1.1}
+    \begin{table}[H]
+        \begin{tabularx}{\columnwidth}{l l l}
+            Wert         & Formel                                                                       & Bemerkung \\
+            $r_{e_{oL}}$ & $=R_1\parallel [r_{BE}+\beta(R_E\parallel r_{CE})]$                          & ohne BST \\ %das hier ohne? in Original beides mit
+            $r_{e_{oL}}$ & $=R_1\parallel R_2\parallel [r_{BE}+\beta(R_E\parallel r_{CE})]$             & mit BST \\
+            $r_{e_{mL}}$ & $=R_1\parallel [r_{BE}+\beta(R_E\parallel r_{CE}\parallel R_L)]$             & ohne BST \\ %das hier ohne? in Original beides mit
+            $r_{e_{mL}}$ & $=R_1\parallel R_2\parallel [r_{BE}+\beta(R_E\parallel r_{CE}\parallel R_L)]$& mit BST \\
+            $r_a$        & $=R_E\parallel\frac{r_{BE}*R_i}{\beta}$                                      & \\
+            $V_u$        & $=\frac{\beta\cdot R_E}{\beta\cdot R_E+r_{BE}}$                              & ohne Last \\
+            $V_u$        & $=\frac{\beta\cdot(R_E\parallel R_L)}{\beta\cdot (R_E\parallel R_L)+r_{BE}}$ & mit Last \\
+            $V_i$        & $=\beta\cdot\frac{r_{CE}(1+\beta)}{R_E+r_{CE}}$                              & ohne Last \\
+            $V_i$        & $=\beta\cdot\frac{r_{CE}(1+\beta)}{(R_E\parallel R_L)+r_{CE}}$               & mit Last \\
+            $V_p$        & $=V_u\cdot V_i\quad \varphi=0^{\circ}$                                       & \\ %grad per ° ging nicht
+        \end{tabularx}
+    \end{table}
+    \svg[0.4]{kollektor-schaltung-martin}{Martins Kollektorschaltung als SVG}{kollektorschaltung}
+\subsection{Basis-Schaltung}
+    \begin{minipage}{0.3\columnwidth}
+        \begin{table}[H]
+            \begin{tabularx}{\columnwidth}{l l}
+                Wert  & Formel \\
+                $r_e$ & $=R_E\parallel\frac{r_{BE}}{\beta}$ \\
+                $r_a$ & $=R_C\parallel r_{CE} $ \\
+                $V_u$ & $=\frac{\beta}{r_{BE}}\cdot r_a$ \\
+                $V_i$ & $=\frac{\beta}{\beta +1}$ \\
+                $V_p$ & $=V_u\cdot V_i$\\
+                $\varphi$ & $=0^{\circ}$ \\ %grad per ° ging nicht
+            \end{tabularx}
+        \end{table}
+    \end{minipage}
+    \begin{minipage}{0.7\columnwidth}
+        \input{dinge/basisschaltung}
+    \end{minipage}
+\subsection{Selektivverstärker} %TODO Schaltung? - keine ahnung. :c ~w
+    \begin{minipage}{0.45\columnwidth}
+        \renewcommand{\arraystretch}{1.05}
+        \begin{table}[H]
+            \begin{tabularx}{\columnwidth}{l l}
+                Wert            & Formel \\
+                $f_o$           & $=\frac{1}{2\pi\sqrt{L\cdot C}}$ \\
+                $Q=G\ddot{u}te$ & $=\frac{R\parallel r_{CE}}{X_C}=\frac{R\parallel r_{CE}}{X_L}$ \\
+                $X_C$           & $=\frac{1}{2\pi f\cdot C}$ \\
+                $X_L$           & $=2\pi f\cdot L$ \\
+            \end{tabularx}
+        \end{table}
+    \end{minipage}
+    \begin{minipage}{0.45\columnwidth}
+        \renewcommand{\arraystretch}{1.05}
+        \begin{table}[H]
+            \begin{tabularx}{\columnwidth}{l l}
+                Wert        & Formel \\
+                $b_{oL}$    & $=\frac{f_0}{Q}=\frac{f_0\cdot X_C}{R\parallel r_{CE}}=\frac{f_0\cdot X_L}{R\parallel r_{CE}}$ \\
+                $b_{mL}$    & $=\frac{f_0\cdot X_C}{R\parallel r_{CE}\cdot R_L}=\frac{r_0\cdot X_L}{R\parallel r_{CE}\parallel R_L}$ \\
+                $V_u$       & $=Y_{21}(R\parallel r_{CE})$ \\
+            \end{tabularx}
+        \end{table}
+    \end{minipage}
+\subsection{Schaltverstärker}
+    Schaltfrequenz $f_{\max}=\frac{1}{t_{ein}+t_{aus}}\quad R_1=\frac{U_B-U_{CX}}{I_{BX}}\quad R_2=\frac{U_e-U_{BE}}{I_{BX}}$
+    \subsubsection{Schaltverstärker mit Hilfsspannungen}
+        \large
+        $I_{BX}=\frac{\ddot{u}\cdot U_B}{R_c\cdot B}\quad U_{IH}\geq R_1(I_{BX}+\frac{U_{BEX}+|U_H|}{R_2})+U_{BEX}\\\\
+        \frac{R_1\cdot (U_{BEX}+|U_H|)}{U_{IH}-U_{BEX}-I_{BX}\cdot R_1}\leq R_2\leq\frac{R_1(U_{BEY}+|U_H|)}{U_{IL}-U_{BEY}}$\\\\
+        $R_1=\frac{(U_{IH}-U_{BEX})(U_{BEY}+U_H)-(U_{BEX}+U_H)(U_{IL}-U_{BEY})}{I_{BX}\cdot (U_{BEY}+U_H)}$\\\\
+        \normalsize
+        standardmäßig: $U_{BEX}=0,8V\quad U_{BEY}=0,2V$
+\subsection{Feldeffekt-Transistoren}
+    Vorwärtssteilheit $y_{21}=\frac{\Delta I_D}{\Delta U_{GS}}=S$\quad Ausgangsleitwert $y_{22}=\frac{\Delta I_D}{\Delta U_{DS}}=\frac{1}{r_{DS}}$\\
+    Automatische Gate-Spannungs-Erzeugung $U_{RS}=I_D\cdot R_S\quad P_{tot}=U_{DS}\cdot I_D$\\
+    Gatespannungserzeuger mit Gatespannungsteiler $R_1=\frac{U_B-U_{GS}-U_{RS}}{I_q}\quad R_2=\frac{U_{GS}+U_{RS}}{I_q}$
+    \svg[0.7]{fets}{FETs}{fets}
+    \subsubsection{Source-Schaltung}
+        \begin{minipage}{0.5\columnwidth}
+            \renewcommand{\arraystretch}{1.01}
+            \begin{table}[H]
+                \begin{tabularx}{\columnwidth}{l l l}
+                    Wert     & Formel                                                           & Bermerkung\\
+                    $C_S$    & $=0,2\cdot\frac{y_{21}}{f_{gu}}$                                 & \\ %!korrigiert von y22, Hinweis von Martin
+                    $C_1$    & $=\frac{1}{2\pi f_{gu}(R_i+r_e)}$                                & \\
+                    $C_2$    & $=\frac{1}{2\pi f_{gu}(R_L+r_a)}$                                & \\
+                    $R_G$    & $=\frac{U_{GS}=0,5V}{I_{GSS}}$                                   & größere $I_{GSS}$ wählen \\
+                    $R_{GS}$ & $=\frac{U_{GS}}{I_{GSS}}$                                        & gr. $U_{GS}$, kl. $I_{GSS}$ wählen \\
+                    $R_S$    & $=\frac{U_{GS}}{I_D}=\frac{U_{RS}}{I_D}$                         & kleine $U_{GS}$ wählen \\
+                    $r_a$    & $=R_D\parallel r_{DS}$                                           & \\
+                    $r_{DS}$ & $=\frac{1}{y_{22}}$                                              & \\
+                    $R_D$    & $=\frac{U_B-U_{DS}-[U_{RS}\, o.\, U_{GS}]}{I_D}=\frac{U_D}{I_D}$ & \\
+                    $r_e$    & $=\frac{R_G\cdot R_{GS}}{R_G+R_{GS}}=R_G\parallel R_{GS}$        & oder:\\
+                    $r_e$    & $=R_1\parallel R_2\parallel R_{GS}$                              & für Gatesp. Teiler \\
+                    $V_U$    & $=y_{21}\cdot r_a$                                               & \\
+                    $U_{RG}$ & $=-I_{GSS}\cdot R_G\quad\varphi=180^{\circ}$                     & \\ %grad per ° ging nicht
+                \end{tabularx}
+            \end{table}
+        \end{minipage}
+        \begin{minipage}{0.5\columnwidth}
+            \vspace*{0.5cm}
+            \svg[1.0]{source-schaltung}{Source-Schaltung}{sourceschaltung}
+        \end{minipage}
+    \subsubsection{Drain-Schaltung}
+        $r_e=R_{GS}(1+y_{21}\cdot R_S)\parallel R_G$ bzw. bei Gatespannungsteiler: $r_e=R_{GS}(1+y_{21}\cdot R_S)\parallel R_1\parallel R_2$ \\
+        $r_a=R_S\parallel \frac{1}{y_{21}}\quad V_U=\frac{y_{21}\cdot R_S}{1+y_{21}\cdot R_S}\: \varphi=0^{\circ}$ \\ %grad per ° ging nicht
+        %TODO @colin "folgende Zeile weird, da sind wahrscheinlich Fehler" - ignorieren weil mir auch zu hoch ~c
+        $R_G=\frac{-U_{GS}}{I_{GSS}}\quad
+        R_S=\frac{U_{RS}}{I_D}\quad
+        R_{GS}=\frac{-U_{GS}}{-I_{GSS}}\quad
+        R_1=\frac{U_B-U_{GS}-U_S}{I_q}\quad
+        R_2=\frac{U_{GS}+U_S}{I_q}$ %R1, R2 laut Kevin
+        \svg[1.0]{drain-schaltung}{Drainschaltung}{drainschaltung}
