@@ -65,6 +65,8 @@ jobs:
           if ! docker run --rm -v "$GITHUB_WORKSPACE:/latex" -u $(id -u ${USER}):$(id -g ${USER}) -e DISABLE_DIFFPDF=1 -e DISABLE_SYNCTEX=1 $DOCKER_IMAGE; then
             echo "stop=true" >> $GITHUB_ENV
             echo "::warning::previous build failed, not generating diff"
+          else
+            mv main.pdf main-old.pdf
           fi
       - name: Download new main.pdf
         if: ${{ env.stop != 'true' }}
