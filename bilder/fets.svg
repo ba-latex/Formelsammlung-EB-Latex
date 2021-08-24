@@ -1,280 +1,601 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <svg
+   xmlns:dc="http://purl.org/dc/elements/1.1/"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
    xmlns:svg="http://www.w3.org/2000/svg"
    xmlns="http://www.w3.org/2000/svg"
    xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
    xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
-   inkscape:version="1.0 (4035a4fb49, 2020-05-01)"
-   sodipodi:docname="fets.svg"
-   id="svg91"
-   viewBox="0 0 548.17236 192.96411"
-   height="192.96411"
-   width="548.17236"
-   y="0"
+   version="1.1"
    x="0"
-   version="1.1">
+   y="0"
+   width="225.375"
+   height="22.523438"
+   viewBox="0 0 225.375 22.523438"
+   id="svg91"
+   sodipodi:docname="fets.svg"
+   inkscape:version="1.0 (4035a4fb49, 2020-05-01)">
+  <metadata
+     id="metadata48">
+    <rdf:RDF>
+      <cc:Work
+         rdf:about="">
+        <dc:format>image/svg+xml</dc:format>
+        <dc:type
+           rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
+        <dc:title></dc:title>
+      </cc:Work>
+    </rdf:RDF>
+  </metadata>
   <defs
      id="defs95" />
   <sodipodi:namedview
-     inkscape:snap-bbox-midpoints="true"
-     inkscape:snap-bbox-edge-midpoints="true"
-     inkscape:bbox-nodes="true"
-     inkscape:bbox-paths="true"
-     inkscape:snap-bbox="true"
-     fit-margin-bottom="0"
-     fit-margin-right="0"
-     fit-margin-left="0"
-     fit-margin-top="0"
-     inkscape:current-layer="Layer_1"
-     inkscape:window-maximized="1"
-     inkscape:window-y="-8"
-     inkscape:window-x="-8"
-     inkscape:cy="83.641879"
-     inkscape:cx="178.21912"
-     inkscape:zoom="1.5066274"
-     showgrid="false"
-     id="namedview93"
-     inkscape:window-height="1027"
-     inkscape:window-width="1920"
-     inkscape:pageshadow="2"
-     inkscape:pageopacity="0"
-     guidetolerance="10"
-     gridtolerance="10"
-     objecttolerance="10"
-     borderopacity="1"
+     inkscape:snap-text-baseline="true"
+     inkscape:snap-center="true"
+     inkscape:snap-object-midpoints="true"
+     inkscape:snap-midpoints="true"
+     inkscape:snap-smooth-nodes="true"
+     inkscape:snap-intersection-paths="true"
+     inkscape:object-paths="true"
+     inkscape:document-rotation="0"
+     pagecolor="#ffffff"
      bordercolor="#666666"
-     pagecolor="#ffffff" />
+     borderopacity="1"
+     objecttolerance="10"
+     gridtolerance="10"
+     guidetolerance="10"
+     inkscape:pageopacity="0"
+     inkscape:pageshadow="2"
+     inkscape:window-width="1920"
+     inkscape:window-height="1027"
+     id="namedview93"
+     showgrid="false"
+     inkscape:zoom="4"
+     inkscape:cx="98.022316"
+     inkscape:cy="-9.2947502"
+     inkscape:window-x="-8"
+     inkscape:window-y="-8"
+     inkscape:window-maximized="1"
+     inkscape:current-layer="Layer_1"
+     fit-margin-top="0"
+     fit-margin-left="0"
+     fit-margin-right="0"
+     fit-margin-bottom="0"
+     inkscape:snap-bbox="true"
+     inkscape:bbox-paths="true"
+     inkscape:bbox-nodes="true"
+     inkscape:snap-bbox-edge-midpoints="true"
+     inkscape:snap-bbox-midpoints="true" />
   <g
-     transform="translate(-24.551656,-102.02463)"
-     id="Layer_1">
+     id="Layer_1"
+     transform="translate(-61.353424,-107.92461)">
     <g
+       transform="matrix(0.95065753,0,0,0.95065753,89.526701,44.61942)"
        id="g40">
       <text
-         transform="translate(49.88,167.592)"
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-family:Arial;-inkscape-font-specification:Arial;fill:#000000;fill-opacity:1"
          id="text6"
-         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-family:Arial;-inkscape-font-specification:Arial;fill:#000000;fill-opacity:1;"><tspan
-           x="-26.676001"
-           y="6"
-           font-family="Avenir-Medium"
-           font-size="24px"
-           fill="#656565"
+         transform="translate(49.88,167.592)"><tspan
+           style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-family:Arial;-inkscape-font-specification:Arial;fill:#000000;fill-opacity:1"
            id="tspan4"
-           style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-family:Arial;-inkscape-font-specification:Arial;fill:#000000;fill-opacity:1;">Gate</tspan></text>
+           fill="#656565"
+           font-size="24px"
+           font-family="Avenir-Medium"
+           y="6"
+           x="-26.676001">G</tspan></text>
       <text
-         transform="translate(226.715,114.259)"
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-family:Arial;-inkscape-font-specification:Arial;fill:#000000;fill-opacity:1"
          id="text10"
-         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-family:Arial;-inkscape-font-specification:Arial;fill:#000000;fill-opacity:1;"><tspan
-           x="-29.112"
-           y="6"
-           font-family="Avenir-Medium"
-           font-size="24px"
-           fill="#656565"
+         transform="translate(226.715,114.259)"><tspan
+           style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-family:Arial;-inkscape-font-specification:Arial;fill:#000000;fill-opacity:1"
            id="tspan8"
-           style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-family:Arial;-inkscape-font-specification:Arial;fill:#000000;fill-opacity:1;">Drain</tspan></text>
-      <text
-         transform="translate(233.12,249.259)"
-         id="text14"
-         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-family:Arial;-inkscape-font-specification:Arial;fill:#000000;fill-opacity:1;"><tspan
-           x="-37.152"
-           y="6"
-           font-family="Avenir-Medium"
-           font-size="24px"
            fill="#656565"
+           font-size="24px"
+           font-family="Avenir-Medium"
+           y="6"
+           x="-29.112">D</tspan></text>
+      <text
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-family:Arial;-inkscape-font-specification:Arial;fill:#000000;fill-opacity:1"
+         id="text14"
+         transform="translate(233.12,249.259)"><tspan
+           style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-family:Arial;-inkscape-font-specification:Arial;fill:#000000;fill-opacity:1"
            id="tspan12"
-           style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-family:Arial;-inkscape-font-specification:Arial;fill:#000000;fill-opacity:1;">Source</tspan></text>
+           fill="#656565"
+           font-size="24px"
+           font-family="Avenir-Medium"
+           y="6"
+           x="-37.152">S</tspan></text>
       <g
          id="g20">
         <path
-           d="m 142,231.759 c -27.338,0 -49.5,-22.162 -49.5,-49.5 0,-27.338 22.162,-49.5 49.5,-49.5 27.338,0 49.5,22.162 49.5,49.5 0,27.338 -22.162,49.5 -49.5,49.5 z"
+           id="path16"
            fill="#ffffff"
-           id="path16" />
+           d="m 142,231.759 c -27.338,0 -49.5,-22.162 -49.5,-49.5 0,-27.338 22.162,-49.5 49.5,-49.5 27.338,0 49.5,22.162 49.5,49.5 0,27.338 -22.162,49.5 -49.5,49.5 z" />
         <path
-           d="m 142,231.759 c -27.338,0 -49.5,-22.162 -49.5,-49.5 0,-27.338 22.162,-49.5 49.5,-49.5 27.338,0 49.5,22.162 49.5,49.5 0,27.338 -22.162,49.5 -49.5,49.5 z"
-           fill-opacity="0"
-           stroke="#000000"
+           id="path18"
            stroke-width="3"
-           id="path18" />
+           stroke="#000000"
+           fill-opacity="0"
+           d="m 142,231.759 c -27.338,0 -49.5,-22.162 -49.5,-49.5 0,-27.338 22.162,-49.5 49.5,-49.5 27.338,0 49.5,22.162 49.5,49.5 0,27.338 -22.162,49.5 -49.5,49.5 z" />
       </g>
       <path
-         d="m 149.428,145.303 0.144,73.912"
-         fill-opacity="0"
-         stroke="#000000"
+         id="path22"
          stroke-width="12"
-         id="path22" />
+         stroke="#000000"
+         fill-opacity="0"
+         d="m 149.428,145.303 0.144,73.912" />
       <g
          id="g28">
         <path
-           d="m 146.063,183.667 h -41.85"
+           id="path24"
+           stroke-width="3"
+           stroke="#000000"
            fill-opacity="0"
-           stroke="#000000"
-           stroke-width="3"
-           id="path24" />
+           d="m 146.063,183.667 h -41.85" />
         <path
-           d="m 104.213,183.667 2.8,-4.2 -11.2,4.2 11.2,4.2 z"
-           fill="#000000"
-           fill-opacity="1"
-           stroke="#000000"
-           stroke-width="3"
+           id="path26"
            stroke-opacity="1"
-           id="path26" />
+           stroke-width="3"
+           stroke="#000000"
+           fill-opacity="1"
+           fill="#000000"
+           d="m 104.213,183.667 2.8,-4.2 -11.2,4.2 11.2,4.2 z" />
       </g>
       <path
-         d="m 153.428,157.636 h 31.667"
-         fill-opacity="0"
-         stroke="#000000"
+         id="path30"
          stroke-width="3"
-         id="path30" />
+         stroke="#000000"
+         fill-opacity="0"
+         d="m 153.428,157.636 h 31.667" />
       <path
-         d="m 153.428,205.303 h 31.667"
-         fill-opacity="0"
-         stroke="#000000"
+         id="path32"
          stroke-width="3"
-         id="path32" />
+         stroke="#000000"
+         fill-opacity="0"
+         d="m 153.428,205.303 h 31.667" />
       <path
-         d="M 185.095,157.637 V 106.254"
-         fill-opacity="0"
-         stroke="#000000"
+         id="path34"
          stroke-width="3"
-         id="path34" />
+         stroke="#000000"
+         fill-opacity="0"
+         d="M 185.095,157.637 V 106.254" />
       <path
-         d="M 185.095,255.637 V 204.254"
-         fill-opacity="0"
-         stroke="#000000"
+         id="path36"
          stroke-width="3"
-         id="path36" />
+         stroke="#000000"
+         fill-opacity="0"
+         d="M 185.095,255.637 V 204.254" />
       <path
-         d="M 41.937,183.667 H 92.5"
-         fill-opacity="0"
-         stroke="#000000"
+         id="path38"
          stroke-width="3"
-         id="path38" />
+         stroke="#000000"
+         fill-opacity="0"
+         d="M 41.937,183.667 H 92.5" />
     </g>
     <g
-       transform="translate(-81.799656)"
-       id="g78">
+       id="g78"
+       transform="matrix(1.073911,0,0,1.073911,-340.03815,224.32795)">
       <text
-         transform="translate(427.213,167.592)"
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-family:Arial;-inkscape-font-specification:Arial;fill:#000000;fill-opacity:1"
          id="text44"
-         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-family:Arial;-inkscape-font-specification:Arial;fill:#000000;fill-opacity:1;"><tspan
-           x="-26.676001"
-           y="6"
-           font-family="Avenir-Medium"
-           font-size="24px"
-           fill="#656565"
+         transform="translate(427.213,167.592)"><tspan
+           style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-family:Arial;-inkscape-font-specification:Arial;fill:#000000;fill-opacity:1"
            id="tspan42"
-           style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-family:Arial;-inkscape-font-specification:Arial;fill:#000000;fill-opacity:1;">Gate</tspan></text>
+           fill="#656565"
+           font-size="24px"
+           font-family="Avenir-Medium"
+           y="6"
+           x="-26.676001">G</tspan></text>
       <text
-         transform="translate(604.048,114.259)"
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-family:Arial;-inkscape-font-specification:Arial;fill:#000000;fill-opacity:1"
          id="text48"
-         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-family:Arial;-inkscape-font-specification:Arial;fill:#000000;fill-opacity:1;"><tspan
-           x="-29.112"
-           y="6"
-           font-family="Avenir-Medium"
-           font-size="24px"
-           fill="#656565"
+         transform="translate(604.048,114.259)"><tspan
+           style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-family:Arial;-inkscape-font-specification:Arial;fill:#000000;fill-opacity:1"
            id="tspan46"
-           style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-family:Arial;-inkscape-font-specification:Arial;fill:#000000;fill-opacity:1;">Drain</tspan></text>
-      <text
-         transform="translate(610.453,249.259)"
-         id="text52"
-         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-family:Arial;-inkscape-font-specification:Arial;fill:#000000;fill-opacity:1;"><tspan
-           x="-37.152"
-           y="6"
-           font-family="Avenir-Medium"
-           font-size="24px"
            fill="#656565"
+           font-size="24px"
+           font-family="Avenir-Medium"
+           y="6"
+           x="-29.112">D</tspan></text>
+      <text
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-family:Arial;-inkscape-font-specification:Arial;fill:#000000;fill-opacity:1"
+         id="text52"
+         transform="translate(610.453,249.259)"><tspan
+           style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-family:Arial;-inkscape-font-specification:Arial;fill:#000000;fill-opacity:1"
            id="tspan50"
-           style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-family:Arial;-inkscape-font-specification:Arial;fill:#000000;fill-opacity:1;">Source</tspan></text>
+           fill="#656565"
+           font-size="24px"
+           font-family="Avenir-Medium"
+           y="6"
+           x="-37.152">S</tspan></text>
       <g
          id="g58">
         <path
-           d="m 519.333,231.759 c -27.338,0 -49.5,-22.162 -49.5,-49.5 0,-27.338 22.162,-49.5 49.5,-49.5 27.338,0 49.5,22.162 49.5,49.5 0,27.338 -22.162,49.5 -49.5,49.5 z"
+           id="path54"
            fill="#ffffff"
-           id="path54" />
+           d="m 519.333,231.759 c -27.338,0 -49.5,-22.162 -49.5,-49.5 0,-27.338 22.162,-49.5 49.5,-49.5 27.338,0 49.5,22.162 49.5,49.5 0,27.338 -22.162,49.5 -49.5,49.5 z" />
         <path
-           d="m 519.333,231.759 c -27.338,0 -49.5,-22.162 -49.5,-49.5 0,-27.338 22.162,-49.5 49.5,-49.5 27.338,0 49.5,22.162 49.5,49.5 0,27.338 -22.162,49.5 -49.5,49.5 z"
-           fill-opacity="0"
-           stroke="#000000"
+           id="path56"
            stroke-width="3"
-           id="path56" />
+           stroke="#000000"
+           fill-opacity="0"
+           d="m 519.333,231.759 c -27.338,0 -49.5,-22.162 -49.5,-49.5 0,-27.338 22.162,-49.5 49.5,-49.5 27.338,0 49.5,22.162 49.5,49.5 0,27.338 -22.162,49.5 -49.5,49.5 z" />
       </g>
       <path
-         d="m 526.762,145.303 0.143,73.912"
-         fill-opacity="0"
-         stroke="#000000"
+         id="path60"
          stroke-width="12"
-         id="path60" />
+         stroke="#000000"
+         fill-opacity="0"
+         d="m 526.762,145.303 0.143,73.912" />
       <g
          id="g66">
         <path
-           d="M 513.997,183.667 H 469.833"
+           id="path62"
+           stroke-width="3"
+           stroke="#000000"
            fill-opacity="0"
-           stroke="#000000"
-           stroke-width="3"
-           id="path62" />
+           d="M 513.997,183.667 H 469.833" />
         <path
-           d="m 513.997,183.667 -2.8,4.2 11.2,-4.2 -11.2,-4.2 z"
-           fill="#000000"
-           fill-opacity="1"
-           stroke="#000000"
-           stroke-width="3"
+           id="path64"
            stroke-opacity="1"
-           id="path64" />
+           stroke-width="3"
+           stroke="#000000"
+           fill-opacity="1"
+           fill="#000000"
+           d="m 513.997,183.667 -2.8,4.2 11.2,-4.2 -11.2,-4.2 z" />
       </g>
       <path
-         d="m 530.762,157.636 h 31.666"
-         fill-opacity="0"
-         stroke="#000000"
+         id="path68"
          stroke-width="3"
-         id="path68" />
+         stroke="#000000"
+         fill-opacity="0"
+         d="m 530.762,157.636 h 31.666" />
       <path
-         d="m 530.762,205.303 h 31.666"
-         fill-opacity="0"
-         stroke="#000000"
+         id="path70"
          stroke-width="3"
-         id="path70" />
+         stroke="#000000"
+         fill-opacity="0"
+         d="m 530.762,205.303 h 31.666" />
       <path
-         d="M 562.428,157.637 V 106.254"
-         fill-opacity="0"
-         stroke="#000000"
+         id="path72"
          stroke-width="3"
-         id="path72" />
+         stroke="#000000"
+         fill-opacity="0"
+         d="M 562.428,157.637 V 106.254" />
       <path
-         d="M 562.428,255.637 V 204.254"
-         fill-opacity="0"
-         stroke="#000000"
+         id="path74"
          stroke-width="3"
-         id="path74" />
+         stroke="#000000"
+         fill-opacity="0"
+         d="M 562.428,255.637 V 204.254" />
       <path
-         d="m 419.271,183.667 h 50.562"
-         fill-opacity="0"
-         stroke="#000000"
+         id="path76"
          stroke-width="3"
-         id="path76" />
+         stroke="#000000"
+         fill-opacity="0"
+         d="m 419.271,183.667 h 50.562" />
     </g>
     <text
-       y="275.8176"
-       x="161.87506"
+       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:11.4079px;font-family:Arial;-inkscape-font-specification:Arial;stroke-width:0.950658"
        id="text82"
-       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-family:Arial;-inkscape-font-specification:Arial"><tspan
-         x="92.935059"
-         y="284.8176"
-         font-family="Avenir-Medium"
-         font-size="30px"
-         fill="#656565"
+       x="243.41444"
+       y="306.82751"><tspan
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-family:Arial;-inkscape-font-specification:Arial;fill:#000000;fill-opacity:1;stroke-width:0.836516"
          id="tspan80"
-         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-family:Arial;-inkscape-font-specification:Arial;fill:#000000;fill-opacity:1">p-Kanal</tspan></text>
-    <text
-       y="275.8176"
-       x="460.45407"
-       id="text86"
-       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-family:Arial;-inkscape-font-specification:Arial"><tspan
-         x="388.4689"
-         y="284.8176"
-         font-family="Avenir-Medium"
-         font-size="30px"
          fill="#656565"
+         font-size="28.5197px"
+         font-family="Avenir-Medium"
+         y="315.38342"
+         x="177.87611">p-Kanal</tspan></text>
+    <text
+       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:12.8869px;font-family:Arial;-inkscape-font-specification:Arial;stroke-width:1.07391"
+       id="text86"
+       x="242.29408"
+       y="520.53156"><tspan
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-family:Arial;-inkscape-font-specification:Arial;fill:#000000;fill-opacity:1;stroke-width:0.979963"
          id="tspan84"
-         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-family:Arial;-inkscape-font-specification:Arial;fill:#000000;fill-opacity:1">n-Kanal</tspan></text>
+         fill="#656565"
+         font-size="32.2173px"
+         font-family="Avenir-Medium"
+         y="530.19672"
+         x="164.98843">n-Kanal</tspan></text>
+    <text
+       id="text875"
+       font-family="'Bitstream Vera Sans', sans-serif"
+       font-size="24px"
+       x="517.35962"
+       y="127.06599"><tspan
+         id="tspan873"
+         font-size="24px"
+         style="text-align:center;text-anchor:middle"
+         x="517.35962"
+         y="127.06599">n-Kanal</tspan></text>
+    <text
+       id="text879"
+       font-family="'Bitstream Vera Sans', sans-serif"
+       font-size="24px"
+       x="717.35968"
+       y="127.06599"><tspan
+         id="tspan877"
+         font-size="24px"
+         style="text-align:center;text-anchor:middle"
+         x="717.35968"
+         y="127.06599">p-Kanal</tspan></text>
+    <g
+       transform="translate(380.34344,96.393153)"
+       id="g939"
+       stroke="#000000">
+      <path
+         id="path881"
+         fill="none"
+         d="m 135,92 v 89"
+         stroke-width="6" />
+      <path
+         id="path883"
+         fill-rule="evenodd"
+         d="m 133,136 32,-10 v 19 z" />
+      <g
+         id="g893"
+         fill="none">
+        <g
+           id="g889"
+           stroke-width="4"
+           stroke-linecap="round"
+           stroke-linejoin="round">
+          <path
+             id="path885"
+             d="M 198,136 H 135" />
+          <path
+             id="path887"
+             d="M 122,178 V 93.7 m 0,84.3 H 82.6 m 92.4,1 v 41 m 0,-41 H 135 M 175,94.2 V 52.3 m 0,41.8 h -40" />
+        </g>
+        <path
+           id="path891"
+           d="m 335,92 v 89"
+           stroke-width="6" />
+      </g>
+      <path
+         id="path895"
+         fill-rule="evenodd"
+         d="m 396,136 -33,-10 v 19 z" />
+      <g
+         id="g905"
+         fill="none">
+        <g
+           id="g901"
+           stroke-width="4"
+           stroke-linecap="round"
+           stroke-linejoin="round">
+          <path
+             id="path897"
+             d="M 388,136 H 335" />
+          <path
+             id="path899"
+             d="M 322,178 V 93.7 m 0,84.3 h -39 m 92,1 v 41 m 0,-41 H 335 M 375,94.2 V 52.3 m 0,41.8 h -40" />
+        </g>
+        <path
+           id="path903"
+           d="m 135,317 v 34"
+           stroke-width="6" />
+      </g>
+      <path
+         id="path907"
+         fill-rule="evenodd"
+         d="m 133,334 32,-10 v 19 z" />
+      <g
+         id="g923"
+         fill="none">
+        <g
+           id="g913"
+           stroke-width="4"
+           stroke-linecap="round"
+           stroke-linejoin="round">
+          <path
+             id="path909"
+             d="M 198,334 H 135" />
+          <path
+             id="path911"
+             d="m 122,376 v -84 m 0,84 H 82.6 m 92.4,1 v 41 m 0,-41 h -40 m 40,-85 v -42 m 0,42 h -40" />
+        </g>
+        <g
+           id="g921"
+           stroke-width="6">
+          <path
+             id="path915"
+             d="m 135,360 v 19" />
+          <path
+             id="path917"
+             d="m 135,290 v 19" />
+          <path
+             id="path919"
+             d="m 335,317 v 34" />
+        </g>
+      </g>
+      <path
+         id="path925"
+         fill-rule="evenodd"
+         d="m 397,334 -33,-10 v 19 z" />
+      <g
+         id="g937"
+         fill="none">
+        <g
+           id="g931"
+           stroke-width="4"
+           stroke-linecap="round"
+           stroke-linejoin="round">
+          <path
+             id="path927"
+             d="M 386,334 H 335" />
+          <path
+             id="path929"
+             d="m 322,376 v -84 m 0,84 h -39 m 92,1 v 41 m 0,-41 h -40 m 40,-85 v -42 m 0,42 h -40" />
+        </g>
+        <path
+           id="path933"
+           d="m 335,360 v 19"
+           stroke-width="6" />
+        <path
+           id="path935"
+           d="m 335,290 v 19"
+           stroke-width="6" />
+      </g>
+    </g>
+    <text
+       id="text943"
+       font-family="'Bitstream Vera Sans', sans-serif"
+       x="-232.61288"
+       y="380.32297"
+       transform="rotate(-90)"
+       font-size="28px"><tspan
+         id="tspan941"
+         font-size="22px"
+         style="text-align:center;text-anchor:middle"
+         x="-232.61288"
+         y="380.32297">normal leitend</tspan></text>
+    <text
+       id="text947"
+       font-family="'Bitstream Vera Sans', sans-serif"
+       x="-432.61285"
+       y="380.32297"
+       transform="rotate(-90)"
+       font-size="28px"><tspan
+         id="tspan945"
+         font-size="22px"
+         style="text-align:center;text-anchor:middle"
+         x="-432.61285"
+         y="380.32297">normal sperrend</tspan></text>
+    <g
+       transform="translate(300.34344,96.393153)"
+       id="g951"
+       fill="none"
+       stroke-opacity="0.5"
+       stroke="#2e3436">
+      <path
+         id="path949"
+         d="m 130.19324,6 v 436 m 183.8,-436 v 436 m 200,-399 h -763.54946 l 0.0569,187 m 763.49252,0 h -763.49252 v 211.99517"
+         sodipodi:nodetypes="cccccccccc" />
+    </g>
+    <g
+       transform="translate(380.34344,96.393153)"
+       id="g1001"
+       fill="#555753"
+       font-family="'Bitstream Vera Sans', sans-serif"
+       font-size="28px">
+      <text
+         id="text955"
+         x="67.055779"
+         y="169.94351"><tspan
+           id="tspan953"
+           x="67.055779"
+           y="169.94351">G</tspan></text>
+      <text
+         id="text959"
+         x="184.76433"
+         y="70.34848"><tspan
+           id="tspan957"
+           x="184.76433"
+           y="70.34848">D</tspan></text>
+      <text
+         id="text963"
+         x="183.44951"
+         y="222.2101"><tspan
+           id="tspan961"
+           x="183.44951"
+           y="222.2101">S</tspan></text>
+      <text
+         id="text967"
+         x="267.05579"
+         y="169.94351"><tspan
+           id="tspan965"
+           x="267.05579"
+           y="169.94351">G</tspan></text>
+      <text
+         id="text971"
+         x="384.76434"
+         y="70.34848"><tspan
+           id="tspan969"
+           x="384.76434"
+           y="70.34848">D</tspan></text>
+      <text
+         id="text975"
+         x="383.44952"
+         y="222.2101"><tspan
+           id="tspan973"
+           x="383.44952"
+           y="222.2101">S</tspan></text>
+      <text
+         id="text979"
+         x="267.05579"
+         y="367.94351"><tspan
+           id="tspan977"
+           x="267.05579"
+           y="367.94351">G</tspan></text>
+      <text
+         id="text983"
+         x="384.76434"
+         y="268.34848"><tspan
+           id="tspan981"
+           x="384.76434"
+           y="268.34848">D</tspan></text>
+      <text
+         id="text987"
+         x="383.44952"
+         y="420.21008"><tspan
+           id="tspan985"
+           x="383.44952"
+           y="420.21008">S</tspan></text>
+      <text
+         id="text991"
+         x="67.055779"
+         y="367.94351"><tspan
+           id="tspan989"
+           x="67.055779"
+           y="367.94351">G</tspan></text>
+      <text
+         id="text995"
+         x="184.76433"
+         y="268.34848"><tspan
+           id="tspan993"
+           x="184.76433"
+           y="268.34848">D</tspan></text>
+      <text
+         id="text999"
+         x="183.44951"
+         y="420.21008"><tspan
+           id="tspan997"
+           x="183.44951"
+           y="420.21008">S</tspan></text>
+    </g>
+    <path
+       id="path1080"
+       d="M 310.00902,102.39315 V 538.16688"
+       style="fill:none;stroke:#2e3436;stroke-width:3;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:0.501961" />
+    <text
+       id="text1084"
+       y="125.39726"
+       x="60.275299"
+       style="font-size:24px;line-height:1.25;font-family:Arial;-inkscape-font-specification:Arial;stroke-width:0.67711"
+       xml:space="preserve"><tspan
+         style="font-size:24px;stroke-width:0.67711"
+         y="125.39726"
+         x="60.275299"
+         id="tspan1082"
+         sodipodi:role="line">Sperrsch.-Tr. (JFETs)</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-size:24px;line-height:1.25;font-family:Arial;-inkscape-font-specification:Arial;stroke-width:0.67711"
+       x="313.80203"
+       y="127.11286"
+       id="text1098"><tspan
+         sodipodi:role="line"
+         id="tspan1096"
+         x="313.80203"
+         y="127.11286"
+         style="font-size:24px;stroke-width:0.67711">MOSFETs</tspan></text>
+    <path
+       id="path1165"
+       d="M 50.783766,138.94162 V 101.77361"
+       style="fill:none;stroke:#2e3436;stroke-width:0.993397px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:0.501961" />
   </g>
 </svg>
