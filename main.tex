@@ -2,6 +2,10 @@
 %\usepackage[utf8]{inputenc}
 %\usepackage[T1]{fontenc}
 
+%Hbox warnungen ignorieren, da diese hier unvermeidlich sind
+\hbadness=10000
+\hfuzz=10pt
+\pdfsuppresswarningpagegroup=1
 \newcommand*{\bfrac}[2]{\genfrac{}{}{0pt}{}{#1}{#2}}
 \setlength{\extrarowheight}{2pt}
 
@@ -14,7 +18,9 @@
 Colin Pohle, Eric Richter, Kevin Wenke\\
 nach Original von Marcel Ott.}
 \maketitle
+\vfuzz=10pt
 \tableofcontents
+\vfuzz=0.1pt
 
 \mainmatter
 \section{E-Reihen}
