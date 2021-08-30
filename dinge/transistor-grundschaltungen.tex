@@ -97,24 +97,24 @@
             \begin{table}[H]
                 \begin{tabularx}{\columnwidth}{l l l}
                     Wert     & Formel                                                           & Bermerkung\\
-                    $C_S$    & $=0,2\cdot\frac{y_{21}}{f_{gu}}$                                 & \\ %!korrigiert von y22, Hinweis von Martin
-                    $C_1$    & $=\frac{1}{2\pi f_{gu}(R_i+r_e)}$                                & \\
-                    $C_2$    & $=\frac{1}{2\pi f_{gu}(R_L+r_a)}$                                & \\
                     $R_G$    & $=\frac{U_{GS}=0,5V}{I_{GSS}}$                                   & größere $I_{GSS}$ wählen \\
                     $R_{GS}$ & $=\frac{U_{GS}}{I_{GSS}}$                                        & gr. $U_{GS}$, kl. $I_{GSS}$ wählen \\
                     $R_S$    & $=\frac{U_{GS}}{I_D}=\frac{U_{RS}}{I_D}$                         & kleine $U_{GS}$ wählen \\
+                    $r_e$    & $=\frac{R_G\cdot R_{GS}}{R_G+R_{GS}}=R_G\parallel R_{GS}$        & oder:\\
+                    $r_e$    & $=R_1\parallel R_2\parallel R_{GS}$                              & für Gatesp. Teiler \\
                     $r_a$    & $=R_D\parallel r_{DS}$                                           & \\
                     $r_{DS}$ & $=\frac{1}{y_{22}}$                                              & \\
                     $R_D$    & $=\frac{U_B-U_{DS}-[U_{RS}\, o.\, U_{GS}]}{I_D}=\frac{U_D}{I_D}$ & \\
-                    $r_e$    & $=\frac{R_G\cdot R_{GS}}{R_G+R_{GS}}=R_G\parallel R_{GS}$        & oder:\\
-                    $r_e$    & $=R_1\parallel R_2\parallel R_{GS}$                              & für Gatesp. Teiler \\
+                    $C_S$    & $=0,2\cdot\frac{y_{21}}{f_{gu}}$                                 & \\ %!korrigiert von y22, Hinweis von Martin
+                    $C_1$    & $=\frac{1}{2\pi f_{gu}(R_i+r_e)}$                                & \\
+                    $C_2$    & $=\frac{1}{2\pi f_{gu}(R_L+r_a)}$                                & \\
                     $V_U$    & $=y_{21}\cdot r_a$                                               & \\
                     $U_{RG}$ & $=-I_{GSS}\cdot R_G\quad\varphi=180^{\circ}$                     & \\ %grad per ° ging nicht
                 \end{tabularx}
             \end{table}
         \end{minipage}
         \begin{minipage}{0.5\columnwidth}
-            \vspace*{0.5cm}
+            \vspace*{6cm}
             \svg[1.0]{source-schaltung}{Source-Schaltung}{sourceschaltung}
         \end{minipage}
     \subsubsection{Drain-Schaltung}
