@@ -25,7 +25,7 @@
                     $r_e$   & $=R_1$ \\
                     $r_a'$  & $=r_a\cdot\frac{V}{V_0}$\\
                     $U_a$   & $=-\frac{R_2}{R_1}\cdot U_e$ \\
-                    $V$     & $=-\frac{R_2}{R_1}$ \\
+                    $V$     & $=-\frac{R_2}{R_1}=\frac{U_a}{U_e}$ \\
                 \end{tabularx}
             \end{table}
             Einfluss der endlichen Verstärkung\\auf einen realen OPV:\\
@@ -64,14 +64,15 @@
         \begin{minipage}{0.4\columnwidth}
             \bild[1.0]{opv-spannungsfolger.png}{Platzh. für gut}{spannungsfolger}
         \end{minipage}
-    \subsubsection{Addierverstärker}
+    \subsubsection{(invertierender) Addierverstärker}
         \begin{minipage}{0.6\columnwidth}
+            Alle Addierverstärker sind invertierend. $\longrightarrow\ -U_a$
             \renewcommand{\arraystretch}{1.1}
             \begin{table}[H]
                 \begin{tabularx}{\columnwidth}{l l}
                     Wert    & Formel \\
                     $-U_a$  & $=(I_1+I_2)\cdot R_0$\\
-                            & $=\frac{R_0}{R_1}\cdot U_{e1}+\frac{R_0}{R_2}\cdot U_{e2}$ \\
+                            & $=\frac{R_0}{R_1}\cdot U_{e1}+\frac{R_0}{R_2}\cdot U_{e2}+\overbrace{\frac{R_0}{R_\text{n}}\cdot U_{e\text{n}}}^{\text{nur für weitere }U_{e\text{n}}}$ \\
                     $-U_a$  & $=(U_{e1}+U_{e2})\cdot\frac{R_0}{R_1}\leftarrow$ nur für $R_1=R_2$ !\\
                     $-I_K$  & $=I_1+I_2$\\
                     $V$     & $=1$ \\
@@ -83,7 +84,7 @@
         \begin{minipage}{0.4\columnwidth}
             \bild[1.0]{opv-addverst.png}{Platzh. für gut}{addierverstärker}
         \end{minipage}
-    \subsubsection{Subtrahierverstärker}
+    \subsubsection{(invertierender) Subtrahierverstärker}
         \begin{minipage}{0.6\columnwidth}
             \begin{table}[H]
                 \begin{tabularx}{\columnwidth}{l l}
@@ -113,7 +114,7 @@
             invertierter Komparator / nicht-invertierter Komparator
             \bild[1.0]{opv-komparator.png}{Platzh. für gut}{komparator}
         \end{center}
-\subsection{Schmidtt-Trigger}
+\subsection{Schmidtt-Trigger (Schwellwertschalter)}
     \begin{minipage}[t][0.4\pdfpageheight][t]{0.5\columnwidth} %extra Argumente erzeugen 0.4xPapierhöhe hohe, top-aligned..te minipage
         \subsubsection{invertierter SWS}
         \renewcommand{\arraystretch}{1.1}
