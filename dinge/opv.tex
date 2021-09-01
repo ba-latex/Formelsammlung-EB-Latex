@@ -70,15 +70,14 @@
             \renewcommand{\arraystretch}{1.1}
             \begin{table}[H]
                 \begin{tabularx}{\columnwidth}{l l}
-                    Wert    & Formel \\
+                    Wert            & Formel \\
                     \vspace{-2ex} % zweite Formel zu -Ua trotz overbrace nach oben ziehen
-                    $-U_a$  & $=(I_1+I_2)\cdot R_0$\\
-                            & $=\frac{R_0}{R_1}\cdot U_{e1}+\frac{R_0}{R_2}\cdot U_{e2}+\overbrace{\frac{R_0}{R_\text{n}}\cdot U_{e\text{n}}}^{\text{nur für weitere }U_{e\text{n}}}$ \\
-                    $-U_a$  & $=(U_{e1}+U_{e2})\cdot\frac{R_0}{R_1}\leftarrow$ nur für $R_1=R_2$ !\\
-                    $-I_K$  & $=I_1+I_2$\\
-                    $V$     & $=1$ \\
-                    $U_{e1}$& $=I_1\cdot R_1$ \\
-                    $U_{e2}$& $=I_1\cdot R_2$ \\
+                    $-U_a$          & $=(I_1+I_2)\cdot R_0$\\
+                                    & $=\frac{R_0}{R_1}\cdot U_{e1}+\frac{R_0}{R_2}\cdot U_{e2}+\overbrace{\frac{R_0}{R_\text{n}}\cdot U_{e\text{n}}}^{\text{nur für weitere }U_{e\text{n}}}$ \\
+                    $-U_a$          & $=(U_{e1}+U_{e2})\cdot\frac{R_0}{R_1}\leftarrow$ nur für $R_1=R_2$ !\\
+                    $-I_K$          & $=I_1+I_2$\\
+                    $V$             & $=1$ \\
+                    $U_{e\text{n}}$ & $=I_\text{n}\cdot R_\text{n}$ \\
                 \end{tabularx}
             \end{table}
         \end{minipage}
@@ -90,7 +89,7 @@
             \begin{table}[H]
                 \begin{tabularx}{\columnwidth}{l l}
                     $-U_a$   & $=\frac{R_K}{R_1}\cdot U_{e1}-(1+\frac{R_K}{R_1})\cdot U_{e2}\underbrace{\cdot \frac{R_3}{R_2+R_3}}_\text{falls $R_3$ vorhanden}$ \\
-                    $U_a$    & $=U_1 + U_R$ \\
+                    $U_a$    & $=U_{a1} + U_{a2}$ \\
                     $-U_{a1}$& $=\frac{R_k}{R_1}\cdot U_{e1}$ \\
                     $U_{a2}$ & $=(1+\frac{R_k}{R_1})\cdot U_{e2}\underbrace{\cdot\frac{R_3}{R_2+R_3}}_\text{falls $R_3$ vorhanden}$ \\
                 \end{tabularx}
