@@ -80,11 +80,16 @@
     Schaltfrequenz $f_{\max}=\frac{1}{t_{ein}+t_{aus}}\quad R_1=R_C=\frac{U_B-U_{CX}}{I_{BX}}\quad R_2=R_B=\frac{U_e-U_{BE}}{I_{BX}}$
     \subsubsection{Schaltverstärker mit Hilfsspannungen}
     \label{Schaltverstaerker-Hilfsspannungen}
-        \large
-        $I_{BX}=\frac{\ddot{u}\cdot U_B}{R_c\cdot B}\quad U_{IH}\geq R_1(I_{BX}+\frac{U_{BEX}+|U_H|}{R_2})+U_{BEX}\\\\
-        \frac{R_1\cdot (U_{BEX}+|U_H|)}{U_{IH}-U_{BEX}-I_{BX}\cdot R_1}\leq R_2\leq\frac{R_1(U_{BEY}+|U_H|)}{U_{IL}-U_{BEY}}$\\\\
-        $R_1=\frac{(U_{IH}-U_{BEX})(U_{BEY}+U_H)-(U_{BEX}+U_H)(U_{IL}-U_{BEY})}{I_{BX}\cdot (U_{BEY}+U_H)}$\\\\
-        \normalsize
+        \begin{minipage}{0.7\columnwidth}
+            \large
+            $I_{BX}=\frac{\ddot{u}\cdot U_B}{R_c\cdot B}\quad U_{IH}\geq R_1(I_{BX}+\frac{U_{BEX}+|U_H|}{R_2})+U_{BEX}\\\\
+            \frac{R_1\cdot (U_{BEX}+|U_H|)}{U_{IH}-U_{BEX}-I_{BX}\cdot R_1}\leq R_2\leq\frac{R_1(U_{BEY}+|U_H|)}{U_{IL}-U_{BEY}}$\\\\
+            $R_1=\frac{(U_{IH}-U_{BEX})(U_{BEY}+U_H)-(U_{BEX}+U_H)(U_{IL}-U_{BEY})}{I_{BX}\cdot (U_{BEY}+U_H)}$\\\\
+            \normalsize
+        \end{minipage}
+        \begin{minipage}{0.3\columnwidth}
+            \svg[0.8]{schaltverstaerker-hilfsspannungen}{Schaltverstärker mit Hilfsspannungen}{schaltverstaerker-hilfsspannungen}
+        \end{minipage}
         standardmäßig: $U_{BEX}=0,8V\rightarrow$ sichere Vollaussteuerung $\rightarrow U_{CE}=0$\\
         sowie: $U_{BEY}=0,2V\rightarrow I_C=0$\\
         $U_{IL}=$ Spannung für sicheres Schließen $\rightarrow U_B\leq U_{BEY}$
@@ -92,7 +97,7 @@
     Vorwärtssteilheit $y_{21}=\frac{\Delta I_D}{\Delta U_{GS}}=S$\quad Ausgangsleitwert $y_{22}=\frac{\Delta I_D}{\Delta U_{DS}}=\frac{1}{r_{DS}}$\\
     Automatische Gate-Spannungs-Erzeugung $U_{RS}=I_D\cdot R_S\quad P_{tot}=U_{DS}\cdot I_D$\\
     Gatespannungserzeuger mit Gatespannungsteiler $R_1=\frac{U_B-U_{GS}-U_{RS}}{I_q}\quad R_2=\frac{U_{GS}+U_{RS}}{I_q}$
-    \svg[0.7]{fets}{FETs}{fets}
+    \svg[0.6]{fets}{FETs}{fets}
     \subsubsection{Source-Schaltung}
         \begin{minipage}{0.5\columnwidth}
             \renewcommand{\arraystretch}{1.01}
