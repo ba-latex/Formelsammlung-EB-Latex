@@ -1,13 +1,11 @@
 \begin{circuitikz}[scale=2]
 \draw
-(0,0) to [zDo, *-*, i=$I_Z$] ++(0,-2)
-to [short, *-o] ++(-2,0)
-to [open] ++(0,2)
+(0,-2) to [zDo, *-*, i<=$I_Z$] ++(0,2)
+to [R, o-*, R=$R_V$] ++(-2,0)
 to [open, o-o, v=$U_E$] ++(0,-2)
-to [open] ++(0,2)
-to [R, o-*, R=$R_V$] ++(2,0)
-to [short, *-, i=$I_L$] ++(2,0)
-to [R, R=$R_L$, v=$U_a$] ++(0,-2)
-to [short, -*] ++(-2,0)
+to [short, -*] ++(2,0)
+to [short, *-] ++(2,0)
+to [R, R=$R_L$, v<=$U_a$] ++(0,2)
+to [short, *-, i<=$I_L$] ++(-2,0)
 ;
 \end{circuitikz}
