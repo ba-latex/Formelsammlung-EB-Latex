@@ -51,19 +51,19 @@ $U_{CE}\approx \frac{1}{2}U_B\quad R_C=\frac{U_B-U_{CE(a)}}{I_{C(a)}}$
 
 \subsection{Thermische Arbeitspunktstabilisierung}
     \begin{minipage}{0.5\columnwidth}
-        durch Emitter-Widerstand:
-        
+        durch Emitter-Widerstand:\\
         $I_E=I_C+I_B\quad U_{RE}=R_E\cdot I_E\\
         R_C=\frac{U_B-U_{CE}-U_{RE}}{I_C}$\\ %U_BE zu U_RE korrigiert laut Eric + Martin
         $C_E\geq\frac{h_{21e}}{2\pi f_{gu}\cdot(h_{11e}+R_i)}=\frac{\beta}{2\pi f_{gu}\cdot(r_{BE}+R_i)}$ %in FS "h_{11}e", ich nehme an Fehler?
-        
         \svg[0.8]{emitter-widerstand}{Emitter-Widerstand}{emitter-widerstand}
     \end{minipage}
     \begin{minipage}{0.5\columnwidth}
-        durch Spannungsgegenkopplung:
-        
+        durch Spannungsgegenkopplung:\\
         $R_1=\frac{U_{CE}-U_{BE(a)}}{I_q+I_B}\quad R_2=\frac{U_{BE}}{I_q}\\
         R_C=\frac{U_B-U_{CE}}{I_C+I_B+I_q}$ 
-        
-        \svg[1.0]{spannungsgegenkopplung}{Spannungsgegenkopplung}{spannungsgegenkopplung}
+        \svg[0.8]{spannungsgegenkopplung}{Spannungsgegenkopplung}{spannungsgegenkopplung}
     \end{minipage}
+    
+    durch Thermistor (NTC=Heißleiter, PTC=Kaltleiter, Bsp. für NTC):\\
+    $R_2\parallel\text{Thermistor}\rightarrow R_{2ges\downarrow}=R_2\parallel R_{NTC\downarrow}\rightarrow U_{BE_a\downarrow}$
+    \svg[0.5]{thermistor-schaltung}{Thermistor-Schaltung}{thermistorschaltung}
