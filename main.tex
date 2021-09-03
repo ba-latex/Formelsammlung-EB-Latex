@@ -44,12 +44,13 @@ Diese Formelsammlung basiert auf der Light-Version einer \href{https://github.co
             $C_L$           & $=10\mu F\cdot [I_L]$                             & \\
             $U_2$           & $= \sqrt{2}\cdot U_1-U_{Diode}$                   & $U_{Diode}\approx 0,6V$ im Leerlauf \\
             $U_2$           & $= 1,2\cdot U_1$                                  & Belastungsfall \\
-            $I_{FM}$        & $\geq1,2\dots 5\cdot I_L$                         & \\
+            $I_{FM}$        & $\geq1,2\dots 5\cdot I_{L-}$                      & \\
             $U_{RM}$        & $=2\cdot \sqrt{2}\cdot U_1$                       & Ungünstigster Fall: Leerlauf \\
             $U_{RM}$        & $=3\cdot \sqrt{2}\cdot U_1$                       & praktisch sinnvolle Auswahl \\
             $I_{L-}$        & $=\frac{U_{2-}}{R_{L\,\min}}$                     & Laststrom \\
             $\ddot{U}$      & $=\frac{U_{Prim\ddot{a}r}}{U_{Sekund\ddot{a}r}}$  & Trafoübersetzung \\
             $U_e$           & $=2\dots 4\cdot U_a$                              & praktisch $2\cdot U_a$ \\
+            $U_{Br}$        & $=50Hz$                                           & Deutschland \\ % mein Herz in Flammen
             $U_{Br\,eff}$   & $=4,8\cdot 10^{-3}\cdot s\cdot\frac{I_{L-}}{C_L}$ & \\
             $U_{Br\,SS}-$   & $=14\cdot 10^{-3}\cdot s\cdot\frac{I_{L-}}{C_L}$  & \\
             $W$             & $=\frac{U_{Br\,eff}}{U_{L-}}$                     & Welligkeit \\ %! in Original anders aber laut Kevin so korrekt
@@ -80,7 +81,7 @@ Diese Formelsammlung basiert auf der Light-Version einer \href{https://github.co
                 $U_{RM}$        & $\geq 1,5\cdot\sqrt{2}\cdot U_1$ (an den Dioden) \\
                 $U_{Br\,eff}$   & $=1,8\cdot 10^{-3}\cdot s \cdot\frac{I_{L-}}{C_L}$ \\
                 $U_{Br\,SS}$    & $=7\cdot 10^{-3}\cdot s \cdot\frac{I_{L-}}{C_L}$ \\
-                $C_L$           & $=\frac{I_L}{100}\frac{F}{A}$ (Standard: $\frac{\mu F}{mA}$)\\
+                $C_L$           & $=\frac{I_L}{100}\frac{F}{A}$ (Standard: $10\frac{\mu F}{mA}$)\\
             \end{tabularx}
         \end{table}
         $U_{2-}=U_2\,\text{gleichgerichtet}$ 
