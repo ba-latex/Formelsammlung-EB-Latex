@@ -101,12 +101,14 @@
 \subsection{OPV mit frequenzunabhängiger Gegenkopplung}
     \begin{minipage}{0.5\columnwidth}
         \subsubsection{Integrierverstärker}
+        $\frac{1}{C\cdot R}\cdot U_e = - \frac{d\, u_a}{dt}$\\
         $-U_a=\frac{1}{RC}\cdot \int U_e(t) dt+U_0$\\ %korrektur laut OPV Stand 060321
         \bild[0.8]{opv-intverst.png}{Platzh. für gut}{integrierverstärker}
     \end{minipage}
     \begin{minipage}{0.5\columnwidth}
         \subsubsection{Differenzierer}
-        $i_c=C\cdot\frac{du_c}{dt}\quad i_k=\frac{U_a}{R}=-i_c\quad -U_a=RC\cdot\frac{du_e}{dt}$\\
+        $i_c=C\cdot\frac{du_c}{dt}\quad i_k=\frac{U_a}{R}=-i_c$\\
+        $-U_a=R\cdot C\cdot\frac{d u_e}{dt}=R\cdot C\cdot\frac{\Delta u_e}{\Delta t}$\\
         \bild[0.8]{opv-differenzierer.png}{Platzh. für gut}{differenzierer}
     \end{minipage}
     \subsubsection{Komparator/Vergleicher}
