@@ -7,7 +7,7 @@
             "label": "Build LaTeX using Docker",
             "type": "shell",
             // Remove '-e DISABLE_DIFFPDF=1' to enable the differential PDF generation.
-            "command": "docker run -u $(id -u ${USER}):$(id -g ${USER}) --init --rm -v \"${workspaceFolder}:/latex\" -e HOST_PATH=\"${workspaceFolder}\" -e DISABLE_DIFFPDF=1 ${config:vorlage-latex.buildcontainer} && php8.0 /var/www/vhosts/clnp.eu/cloud.clnp.eu/occ files:scan --path='TheColin21/files/BA/Formelsammlung EB in geil'",
+            "command": "docker run -u $(id -u ${USER}):$(id -g ${USER}) --init --rm -v \"${workspaceFolder}:/latex\" -e HOST_PATH=\"${workspaceFolder}\" -e DISABLE_DIFFPDF=1 ${config:vorlage-latex.buildcontainer} && if [[ \"$USER\" == \"clnp\" ]]; then php8.0 /var/www/vhosts/clnp.eu/cloud.clnp.eu/occ files:scan --path='TheColin21/files/BA/Formelsammlung EB in geil'; fi",
             "problemMatcher": [
                 {
                     "owner": "latex",
