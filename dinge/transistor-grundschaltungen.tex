@@ -1,21 +1,27 @@
 \subsection{Emitter-Schaltung}
-    \renewcommand{\arraystretch}{0.9}
-    \begin{table}[H]
-        \begin{tabularx}{\columnwidth}{l l l}
-            Wert  & Formel                                                  & Bemerkung \\
-            $r_e$ & $=R_1\parallel R_2\parallel r_{BE}$                     & wenn $R_E$ mit $C_E$ überbrückt \\
-            $r_e$ & $=R_1\parallel R_2\parallel (r_{BE}+\beta\cdot R_E)$    & ohne $C_E$ \\
-            $r_a$ & $=R_C\parallel r_{CE}$                                  & \\
-            $V_u$ & $=\frac{\beta}{r_{BE}}\cdot r_a$                        & ohne Last \\
-            $V_u$ & $=\frac{\beta}{r_{BE}}\cdot (r_a\parallel R_L)$         & mit Last \\
-            $V_i$ & $=\beta\cdot\frac{r_{CE}}{r_{CE}+R_C}$                  & ohne Last \\
-            $V_i$ & $=\beta\cdot\frac{r_{CE}}{r_{CE}+(R_C\parallel R_L)}$   & mit Last \\
-            $V_p$ & $=V_u\cdot V_i\quad \varphi=180^{\circ}$                & \\ %grad per ° ging nicht
-            $C_E$ & $=\frac{h_{21E}}{2\pi f_{gu}\dot (h_{11E}+R_i)}$        & \\
-            $I_q$ &                                                         & $10\dots100\mu A$\\
-        \end{tabularx}
-    \end{table}
-    \svg[0.35]{emitter-schaltung}{Emitterschaltung}{emitterschaltung}
+    \begin{minipage}{0.6\columnwidth}
+        \renewcommand{\arraystretch}{0.9}
+        \begin{table}[H]
+            \begin{tabularx}{\columnwidth}{l l l}
+                Wert  & Formel                                                  & Bemerkung \\
+                $r_e$ & $=R_1\parallel R_2\parallel r_{BE}$                     & wenn $R_E$ mit $C_E$ überbrückt \\
+                $r_e$ & $=R_1\parallel R_2\parallel (r_{BE}+\beta\cdot R_E)$    & ohne $C_E$ \\
+                $r_a$ & $=R_C\parallel r_{CE}$                                  & \\
+                $V_u$ & $=\frac{\beta}{r_{BE}}\cdot r_a$                        & ohne Last \\
+                $V_u$ & $=\frac{\beta}{r_{BE}}\cdot (r_a\parallel R_L)$         & mit Last \\
+                $V_i$ & $=\beta\cdot\frac{r_{CE}}{r_{CE}+R_C}$                  & ohne Last \\
+                $V_i$ & $=\beta\cdot\frac{r_{CE}}{r_{CE}+(R_C\parallel R_L)}$   & mit Last \\
+                $V_p$ & $=V_u\cdot V_i\quad \varphi=180^{\circ}$                & \\ %grad per ° ging nicht
+                $C_E$ & $=\frac{h_{21E}}{2\pi f_{gu}\dot (h_{11E}+R_i)}$        & \\
+                $I_q$ &                                                         & $10\dots100\mu A$\\
+            \end{tabularx}
+        \end{table}
+    \end{minipage}    
+    \begin{minipage}{0.4\columnwidth}
+        \vspace*{3cm}
+        \svg{emitter-schaltung}{Emitterschaltung}{emitterschaltung}    
+    \end{minipage}
+    
 \subsection{Kollektor-Schaltung}
     Anmerkung: BST = Basisspannungsteiler
     \renewcommand{\arraystretch}{1.1}

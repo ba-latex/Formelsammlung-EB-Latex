@@ -93,7 +93,7 @@ Diese Formelsammlung basiert auf der Light-Version einer \href{https://github.co
     \begin{table}[H]
         \begin{tabularx}{\columnwidth}{l l l}
             Wert                        & Formel                                                    & Bemerkung \\
-            \multicolumn{2}{c}{$\frac{U_{Br1}}{\sqrt{R_{2_S}+x_{2_{Cs}}}}=\frac{U_{Br2}}{x_{Cs}}$}  & Vorraussetzung: $R_s\gg x_{Cs}\to G\approx\frac{R_s}{x_{Cs}}$ \\
+            $\frac{U_{Br2}}{x_{Cs}}$    & $=\frac{U_{Br1}}{\sqrt{R_{2_S}+x_{2_{Cs}}}}$               & Vorraussetzung: $R_s\gg x_{Cs}\to G\approx\frac{R_s}{x_{Cs}}$ \\
             $\frac{U_{Br1}}{U_{Br2}}$   & $=G$                                                      & Glättungsfaktor \\
             $G$                         & $=\sqrt{(\frac{R_s}{x_{Cs}})_2+1}$                        & sinnvoll: $10\dots 20$ \\
             $G$                         & $=2\pi\cdot f_{Br}\cdot C_s\cdot  R_s$                    & sinnvoll: $10\dots 20$ \\
@@ -111,7 +111,7 @@ Diese Formelsammlung basiert auf der Light-Version einer \href{https://github.co
             \begin{tabularx}{\columnwidth}{l l}
                 Wert    & Formel \\
                 $G$     & $=\frac{x_L}{x_C}-1$ \\
-                $x_L$   & $2\pi\cdot f_{Br}\cdot L_S$ \\
+                $x_L$   & $=2\pi\cdot f_{Br}\cdot L_S$ \\
                 $x_C$   & $=\frac{1}{2\pi\cdot f_{Br}\cdot C_S}$ \\
                 $G$     & $=(2\pi\cdot f_{Br})_2\cdot L_S\cdot C_S$ \\
             \end{tabularx}
@@ -170,30 +170,29 @@ Diese Formelsammlung basiert auf der Light-Version einer \href{https://github.co
     a) Spannungsgrenzen mit Z-Dioden\\
     \begin{minipage}{0.4\columnwidth}
         $pos.\, HW\: U_a=U_S+U_{Z2}$\\
-        $neg.\, HW\: U_a=U_S+U_{Z1}$\\
+        $neg.\, HW\: U_a=U_S+U_{Z1}$
     \end{minipage}
     \begin{minipage}{0.4\columnwidth}
-        \svg[1.0]{spannungsgrenze_z}{Spannungsgrenze Z-Dioden}{spannung_z}
+        \svg[0.7]{spannungsgrenze_z}{Spannungsgrenze Z-Dioden}{spannung_z}
     \end{minipage}\\
     b) Spannungsgrenzen mit Gegenspannung\\
     \begin{minipage}{0.4\columnwidth}
         $U_a=U_S+U_V$\\
-        $U_e>U_S+U_V$\\
+        $U_e>U_S+U_V$
     \end{minipage}
     \begin{minipage}{0.4\columnwidth}
-        \svg[1.0]{spannungsgrenze_gegenspannung}{Spannungsgrenze Gegenspannung}{spannung_gegen}
+        \svg[0.7]{spannungsgrenze_gegenspannung}{Spannungsgrenze Gegenspannung}{spannung_gegen}
     \end{minipage}\\
     c) Spannungsgrenzen mit Klipperschaltung\\
     \begin{minipage}{0.4\columnwidth}
         $U_a=U_r$\\
         $U_e=U_{S1}+U_{SL}+U_R$\\
-        $U_e<2\cdot U_s$\\
+        $U_e<2\cdot U_s$
     \end{minipage}
     \begin{minipage}{0.4\columnwidth}
-        \svg[1.0]{spannungsgrenze_klipper}{Spannungsgrenze Klipper}{spannung_klipper}
+        \svg[0.7]{spannungsgrenze_klipper}{Spannungsgrenze Klipper}{spannung_klipper}
     \end{minipage}\\
-    \pagebreak %! harter Pagebreak zum hübsch aussehen, entfernen wenn stört
-
+    
 \section{Lineare Spannungsregler}
     \begin{minipage}{0.4\columnwidth}    
         \subsection{Festspannungs-Regler}
