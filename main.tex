@@ -133,25 +133,34 @@ Diese Formelsammlung basiert auf der Light-Version einer \href{https://github.co
     \begin{table}[H]
         \renewcommand{\arraystretch}{1.2}
         \begin{tabularx}{\columnwidth}{l l l}%!Dritte Spalte jeweils auf nächster Zeile, um Code nicht zu breit zu gestalten
-            $I_{Z_{\min}}=0,1\cdot I_{Z_{\max}}$            & $R_{Vmax}=\frac{U_{E\min}-U_Z}{I_{Z\min}+I_{L\max}}$
-                & $S=(1+\frac{R_V}{r_z})\cdot\frac{U_Z}{U_e}$\\
-            $P_{Rv}=\frac{(U_{E\max}-U_Z)^2}{R_V}$          & $R_{V\min}=\frac{U_{E\max}-U_Z}{I_{Z\max}+I_{L\min}}$
-                & $S_{\min}=(1+\frac{R_V\,gew.\,\min}{r_z})\cdot\frac{U_Z}{U_{E\max}}$\\
-            $U_E=2\cdot U_Z$                                & $R_{Vgew\min}=\frac{U{e_{\max}}-U_Z}{I_{ZBetr_{\max}}+I_{L\min}}$
-                & $I_{Z{Betrieb_{\max}}}=\frac{U{e_{\max}}-U_Z}{R_{Vgew\min}}-I_{L\min}$\\
-            $R_{V_{\min}}\leq R_{V_{gew}} \leq R_{V_{\max}}$& meist gegen $R_{V_{\max}}$
-                & \\
-            $I_{L_{\max}}=\frac{U_Z}{R_{L_{\min}}}$         & $I_L=\frac{U_A}{R_L}=\frac{U_Z}{R_L}$
-                & $I_{L_{\min}}=\frac{U_Z}{R_{L_{\max}}}$ \\
-            $P_{RV\max}=\frac{\left(U_{e\max}-U_Z\right)^2}{R_{V_{gew}}}$ &
-            $S_{\max}=\left(1+\frac{R_{V\,gew\max}}{r_z}\right)\cdot\frac{U_a}{U_{e\min}}$ & 
-            $P_{S\max}=U_{R_L}\cdot I_{F\max}$\\
-            $P_{S\max}=P_{tot}\cdot\left(\frac{U_B}{U_F}-1\right)$&
-            $R_{L\min}=\frac{\left(U_b-U_F\right)^2}{P_{S\max}}$&
-            $I_{F\max}=\frac{P_{tot}}{U_F}$\\
-            $U_{R_L}=U_B-U_F$&
-            $I_{Z\max}=\frac{P_{tot}}{U_Z}$&
+            $I_{F\max}=\frac{P_{tot}}{U_F}$ &
+            $P_{Rv}=\frac{(U_{E\max}-U_Z)^2}{R_V}$ &
+            $U_E=2\cdot U_Z$
             \\
+            $I_L=\frac{U_A}{R_L}=\frac{U_Z}{R_L}$ &
+            $P_{RV\max}=\frac{\left(U_{e\max}-U_Z\right)^2}{R_{V_{gew}}}$ &
+            $U_{R_L}=U_B-U_F$
+            \\
+            $I_{L_{\min}}=\frac{U_Z}{R_{L_{\max}}}$ &
+            $P_{S\max}=U_{R_L}\cdot I_{F\max}P_{tot}\cdot\left(\frac{U_B}{U_F}-1\right)$ &
+            $R_{V\min}=\frac{U_{E\max}-U_Z}{I_{Z\max}+I_{L\min}}$
+            \\
+            $I_{L_{\max}}=\frac{U_Z}{R_{L_{\min}}}$ &
+            $S_{\min}=(1+\frac{R_V\,gew.\,\min}{r_z})\cdot\frac{U_Z}{U_{E\max}}$ &
+            $R_{Vmax}=\frac{U_{E\min}-U_Z}{I_{Z\min}+I_{L\max}}$
+            \\
+            $I_{Z_{\min}}=0,1\cdot I_{Z_{\max}}$ &
+            $S_{\max}=\left(1+\frac{R_{V\,gew\max}}{r_z}\right)\cdot\frac{U_a}{U_{e\min}}$ &
+            $R_{Vgew\min}=\frac{U{e_{\max}}-U_Z}{I_{ZBetr_{\max}}+I_{L\min}}$
+            \\
+            $I_{Z\max}=\frac{P_{tot}}{U_Z}$ &
+            $S=(1+\frac{R_V}{r_z})\cdot\frac{U_Z}{U_e}$ &
+            $R_{L\min}=\frac{\left(U_b-U_F\right)^2}{P_{S\max}}$
+            \\
+            \multicolumn{2}{l}{$I_{Z{Betrieb_{\max}}}=\frac{U{e_{\max}}-U_Z}{R_{Vgew\min}}-I_{L\min}$} &
+            $R_{V_{\min}}\leq R_{V_{gew}} \leq R_{V_{\max}}$
+            \\
+            $R_{V_{gew}}$ meist gegen $R_{V_{\max}}$
         \end{tabularx}
     \end{table}
     Leistung über Diode auch mit berechnen, wenn das nicht explizit gefragt ist.\\
